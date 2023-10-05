@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "title": "Blogr Landing Page",
+        "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
+        "url": "https://blogr-landing-page-mw.netlify.app/",
+        "repo": "https://github.com/MikhailWahib/Blogr-Landing-Page",
+        "techstack": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "imgPath": "/imgs/blogr.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Easybank Landing page",
+        "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
+        "url": "https://easybank-landing-page-mw.netlify.app/",
+        "repo": "https://github.com/MikhailWahib/easybank-landing-page/",
+        "techstack": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "imgPath": "/imgs/easybank.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Sneakers product page",
+        "description": "An E-commerce product page built with React with responsive layout ",
+        "url": "https://sneakers-product-mw.netlify.app/",
+        "repo": "https://github.com/MikhailWahib/e-commerce-product-page",
+        "techstack": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "imgPath": "/imgs/sneakers.jpg"
+    }
+]

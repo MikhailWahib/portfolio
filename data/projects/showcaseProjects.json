@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Movibes",
+        "description": "Movibes is your ultimate destination for exploring a world of movies and TV shows. Dive into a cinematic adventure, where you can discover a wide range of films, watch trailers, explore cast and crew information, and much more.",
+        "url": "https://movibes-mw.vercel.app/",
+        "repo": "https://github.com/MikhailWahib/Movibes",
+        "techstack": [
+            "React",
+            "NextJS",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "loginCredintials": {
+            "email": "john@doe.com",
+            "password": "123456"
+        },
+        "imgPath": "/imgs/movibes.jpg"
+    },
+    {
+        "id": 2,
+        "title": "World Countries",
+        "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
+        "url": "https://world-countries-mw.vercel.app",
+        "repo": "https://github.com/MikhailWahib/world-countries",
+        "techstack": [
+            "React",
+            "NextJS",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "imgPath": "/imgs/world-countries.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Space Tourism",
+        "description": "A Single Page Application (SPA) created with React and Tailwind CSS for exploring space tourism destinations. Enjoy an immersive and user-friendly experience as you navigate the cosmos.",
+        "url": "https://space-tourism-mw.netlify.app",
+        "repo": "https://github.com/MikhailWahib/space-tourism-website",
+        "techstack": [
+            "React",
+            "JavaScript",
+            "TailwindCSS"
+        ],
+        "imgPath": "/imgs/space-tourism.jpg"
+    }
+]
