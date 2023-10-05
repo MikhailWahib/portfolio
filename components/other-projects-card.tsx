@@ -18,7 +18,7 @@ const OtherProjectCard = ({ data }: Props) => {
 						</h3>
 					</a>
 					<div className='transition hover:text-primary'>
-						<a href={data.repo} target='_blank'>
+						<a href={data.repo} target='_blank' aria-label='GitHub repository'>
 							<AiFillGithub size={32} />
 						</a>
 					</div>

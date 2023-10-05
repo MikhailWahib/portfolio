@@ -19,6 +19,7 @@ const ContactSection = () => {
 						href='https://github.com/MikhailWahib'
 						target='_blank'
 						className='transition hover:text-primary'
+						aria-label='GitHub repository'
 					>
 						<AiFillGithub size={40} />
 					</a>

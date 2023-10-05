@@ -49,6 +49,7 @@ const Header = () => {
 				</ul>
 			</nav>
 			<button
+				name='Menu Button'
 				className='md:hidden text-primary text-2xl'
 				onClick={() => setOpen(!open)}
 			>
