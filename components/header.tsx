@@ -49,9 +49,9 @@ const Header = () => {
 				</ul>
 			</nav>
 			<button
-				name='Menu Button'
 				className='md:hidden text-primary text-2xl'
 				onClick={() => setOpen(!open)}
+				aria-label='Menu'
 			>
 				{!open ? <BiMenuAltRight size={30} /> : <span>X</span>}
 			</button>
