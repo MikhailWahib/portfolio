@@ -1,5 +1,18 @@
 [
     {
+        "id": 0,
+        "title": "Movies REST API",
+        "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
+        "url": "",
+        "repo": "https://github.com/MikhailWahib/Movies-API",
+        "techstack": [
+            "Node.js",
+            "Express.js",
+            "TypeScript",
+            "MongoDB"
+        ]
+    },
+    {
         "id": 1,
         "title": "Blogr Landing Page",
         "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",

@@ -16,7 +16,7 @@ const ProjectShowcaseCard = ({ data }: Props) => {
 					data.id % 2 === 0 ? 'col-[6/13]' : 'col-[1/8]'
 				}`}
 			>
-				<Image src={data.imgPath} alt={data.title} fill></Image>
+				<Image src={data.imgPath} alt={data.title} fill />
 			</div>
 			<div
 				className={`relative row-span-full col-span-full px-7 py-5 bg-black rounded ${
