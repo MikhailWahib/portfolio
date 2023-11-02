@@ -1,7 +1,7 @@
-import LinkBtn from '../link-btn'
-import SectionHeading from '../section-heading'
+import LinkBtn from "../link-btn"
+import SectionHeading from "../section-heading"
 
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub } from "react-icons/ai"
 const ContactSection = () => {
 	return (
 		<section id='contact' className='min-h-0 mb-20'>
@@ -9,10 +9,10 @@ const ContactSection = () => {
 				<SectionHeading title="let's colaborate" />
 				<div className='flex flex-col items-center gap-8 mx-auto w-[min(55rem,100%)] mt-16'>
 					<p className='text-center text-lg'>
-						I am currently looking for opportunies to learn and grow in the web
-						development industry, my inbox is always open! If you have any
-						questions or just want to say hello, please feel free to contact me
-						with the email link below.
+						I am actively seeking new opportunities to expand my skills and
+						knowledge in the web development industry. My inbox is always open!
+						If you have any inquiries or simply want to say hello, please don't
+						hesitate to reach out to me via the email link below.
 					</p>
 					<LinkBtn title="Let's Chat!" href='mailto:mikhailwahib20@gmail.com' />
 					<a

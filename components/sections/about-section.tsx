@@ -1,5 +1,5 @@
-import SectionHeading from '../section-heading'
-import Technologies from '../technologies'
+import SectionHeading from "../section-heading"
+import Technologies from "../technologies"
 const About = () => {
 	return (
 		<section id='about'>
@@ -8,23 +8,21 @@ const About = () => {
 				<div className='mt-16'>
 					<h3 className='text-xl text-primary'>Who am I</h3>
 					<p className='text-xl mt-3 pr-4 leading-[1.75]'>
-						I'm a <span className='text-primary'>Frontend developer</span>{' '}
-						specializing in crafting engaging and user-friendly web interfaces.{' '}
-						<br /> My passion lies in transforming design concepts into
-						interactive web experiences. <br /> While I primarily focus on
-						<span className='text-primary'> Frontend development</span>, I also
-						possess basic{' '}
-						<span className='text-primary'>Backend knowledge</span>. <br /> I'm
-						a dedicated learner, constantly exploring new coding techniques and
-						design principles to enhance my skills. <br /> I value the
-						importance of clean code, effective communication, and collaboration
-						in delivering exceptional digital solutions. <br /> Let's{' '}
+						I'm a <span className='text-primary'>Full-Stack developer</span>,
+						dedicated to creating engaging and user-friendly web interfaces.{" "}
+						<br /> My passion lies in turning design concepts into interactive
+						web experiences. <br /> I thrive on continuous learning and
+						exploring new fields, constantly expanding my knowledge and skills.{" "}
+						<br /> I understand the importance of clean code, effective
+						communication, and collaboration in delivering exceptional digital
+						solutions. <br />
+						let's{" "}
 						<a
 							href='#contact'
 							className='text-primary underline transition hover:opacity-70'
 						>
 							connect
-						</a>{' '}
+						</a>{" "}
 						and explore exciting web development opportunities together.
 					</p>
 				</div>
