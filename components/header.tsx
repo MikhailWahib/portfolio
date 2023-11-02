@@ -1,21 +1,23 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
+import { useState } from "react"
 
-import { BiMenuAltRight } from 'react-icons/bi'
+import { BiMenuAltRight } from "react-icons/bi"
+
+import LinkBtn from "./link-btn"
 
 const links = [
 	{
-		title: 'About',
-		href: '#about',
+		title: "About",
+		href: "#about",
 	},
 	{
-		title: 'Projects',
-		href: '#projects',
+		title: "Projects",
+		href: "#projects",
 	},
 	{
-		title: 'Contact',
-		href: '#contact',
+		title: "Contact",
+		href: "#contact",
 	},
 ]
 
@@ -25,13 +27,13 @@ const Header = () => {
 		<header className='fixed top-0 w-full h-[70px] flex justify-between items-center p-4 md:py-4 md:px-20 bg-background z-50'>
 			<div>
 				<a href='/#' className='text-2xl font-bold'>
-					<span className='text-primary'>M</span>ikhail{' '}
+					<span className='text-primary'>M</span>ikhail{" "}
 					<span className='text-primary'>W</span>ahib
 				</a>
 			</div>
 			<nav
-				className={`absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-backgroundSecondary md:bg-transparent transition-all ${
-					open ? 'max-h-[200px]' : 'max-h-0'
+				className={`flex flex-col md:flex-row justify-center items-center absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-backgroundSecondary md:bg-transparent transition-all ${
+					open ? "max-h-screen" : "max-h-0"
 				} md:max-h-full z-40`}
 			>
 				<ul className='flex flex-col md:flex-row items-center md:items-start py-8 px-4 md:py-0 md:px-0 gap-4'>
@@ -47,6 +49,12 @@ const Header = () => {
 						</li>
 					))}
 				</ul>
+				<LinkBtn
+					download
+					title='Resume'
+					href='/Resume.pdf'
+					className='py-1 ml-3 mb-5 md:mb-0'
+				/>
 			</nav>
 			<button
 				className='md:hidden text-primary text-2xl'
