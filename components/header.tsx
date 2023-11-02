@@ -53,7 +53,8 @@ const Header = () => {
 					download
 					title='Resume'
 					href='/Resume.pdf'
-					className='py-1 ml-3 mb-5 md:mb-0'
+					padding='py-1 px-3'
+					className='ml-3 mb-5 md:mb-0'
 				/>
 			</nav>
 			<button
