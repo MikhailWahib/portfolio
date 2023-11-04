@@ -22,8 +22,7 @@
             "HTML",
             "CSS",
             "JavaScript"
-        ],
-        "imgPath": "/imgs/blogr.jpg"
+        ]
     },
     {
         "id": 2,
@@ -35,11 +34,22 @@
             "HTML",
             "CSS",
             "JavaScript"
-        ],
-        "imgPath": "/imgs/easybank.jpg"
+        ]
     },
     {
         "id": 3,
+        "title": "Dual sense product page",
+        "description": "An E-commerce product page built with React with responsive layout and animations",
+        "url": "https://dual-sense-product-page.vercel.app/",
+        "repo": "https://github.com/MikhailWahib/ecommerce-product-page",
+        "techstack": [
+            "React",
+            "TypeScript",
+            "TailwindCSS"
+        ]
+    },
+    {
+        "id": 4,
         "title": "Sneakers product page",
         "description": "An E-commerce product page built with React with responsive layout ",
         "url": "https://sneakers-product-mw.netlify.app/",
@@ -48,7 +58,6 @@
             "React",
             "JavaScript",
             "CSS"
-        ],
-        "imgPath": "/imgs/sneakers.jpg"
+        ]
     }
 ]
