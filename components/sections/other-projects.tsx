@@ -1,8 +1,8 @@
-import fs from 'fs/promises'
-import path from 'path'
+import fs from "fs/promises"
+import path from "path"
 
-import SectionHeading from '../section-heading'
-import OtherProjectsCard from '../other-projects-card'
+import SectionHeading from "../section-heading"
+import OtherProjectsCard from "../other-projects-card"
 
 interface Project {
 	id: number
@@ -17,8 +17,8 @@ interface Project {
 const getData = async () => {
 	try {
 		const fileContents = await fs.readFile(
-			path.join(process.cwd(), 'data/projects') + '/otherProjects.json',
-			'utf8'
+			path.join(process.cwd(), "data/projects") + "/otherProjects.json",
+			"utf8"
 		)
 		return JSON.parse(fileContents) as Project[]
 	} catch (error) {

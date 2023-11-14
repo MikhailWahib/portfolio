@@ -1,3 +1,4 @@
+import FadeinDiv from "@/framer-components/fadein-div"
 import LinkBtn from "../link-btn"
 import SectionHeading from "../section-heading"
 
@@ -5,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai"
 const ContactSection = () => {
 	return (
 		<section id='contact' className='min-h-0 mb-20'>
-			<div>
+			<FadeinDiv>
 				<SectionHeading title="let's colaborate" />
 				<div className='flex flex-col items-center gap-8 mx-auto w-[min(55rem,100%)] mt-16'>
 					<p className='text-center text-lg'>
@@ -24,7 +25,7 @@ const ContactSection = () => {
 						<AiFillGithub size={40} />
 					</a>
 				</div>
-			</div>
+			</FadeinDiv>
 		</section>
 	)
 }

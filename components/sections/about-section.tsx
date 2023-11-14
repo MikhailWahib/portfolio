@@ -1,9 +1,10 @@
+import FadeinDiv from "@/framer-components/fadein-div"
 import SectionHeading from "../section-heading"
 import Technologies from "../technologies"
 const About = () => {
 	return (
 		<section id='about'>
-			<div>
+			<FadeinDiv>
 				<SectionHeading title='About' />
 				<div className='mt-16'>
 					<h3 className='text-xl text-primary'>Who am I</h3>
@@ -30,7 +31,7 @@ const About = () => {
 					<h3 className='text-lg text-primary'>Technologies</h3>
 					<Technologies />
 				</div>
-			</div>
+			</FadeinDiv>
 		</section>
 	)
 }
