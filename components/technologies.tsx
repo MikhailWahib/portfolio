@@ -34,9 +34,12 @@ const Technologies = () => {
 				return (
 					<li
 						key={i}
-						className={`flex flex-col items-center transition-transform hover:scale-105 hover:text-primary group`}
+						className={` transition-transform hover:scale-105 hover:text-primary group`}
 					>
-						<PopupSpan delay={i * 0.1}>
+						<PopupSpan
+							delay={i * 0.1}
+							className='inline-flex flex-col items-center'
+						>
 							{skill.icon}
 							<p className='text-primary text-xs opacity-0 group-hover:opacity-100'>
 								{skill.name}
