@@ -25,13 +25,7 @@ const Projects = async () => {
 			<SectionHeading title='Projects' />
 			<ul className='w-[min(100%,75rem)] mx-auto mt-16'>
 				{projects?.map((project, i) => {
-					return (
-						<FadeinDiv key={i} className='relative mb-12 md:mb-24 last:mb-0'>
-							<li className='relative grid grid-cols-12 items-center'>
-								<ProjectShowcaseCard data={project} />
-							</li>
-						</FadeinDiv>
-					)
+					return <ProjectShowcaseCard key={i} data={project} />
 				})}
 			</ul>
 		</section>
