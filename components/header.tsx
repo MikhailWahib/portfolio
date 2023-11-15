@@ -52,7 +52,7 @@ const Header = () => {
 				<LinkBtn
 					download
 					title='Resume'
-					href='/Resume.docx'
+					href='/Resume.pdf'
 					padding='py-1 px-3'
 					className='ml-3 mb-5 md:mb-0'
 				/>
