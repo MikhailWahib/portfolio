@@ -1,19 +1,6 @@
 [
     {
         "id": 0,
-        "title": "URL Shortener API",
-        "description": "A TypeScript-based URL shortener application built on Node.js and Express, utilizing PostgreSQL for data storage and JWT for user authentication.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/url-Shortener-backend",
-        "techstack": [
-            "Node.js",
-            "Express.js",
-            "TypeScript",
-            "PostgreSQL"
-        ]
-    },
-    {
-        "id": 1,
         "title": "Movies REST API",
         "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
         "url": "",
