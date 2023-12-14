@@ -9,22 +9,24 @@ import {
 	BiLogoPostgresql,
 	BiLogoMongodb,
 } from "react-icons/bi"
+import { FaVuejs } from "react-icons/fa"
 import { TbBrandNextjs } from "react-icons/tb"
 import { SiExpress } from "react-icons/si"
 import PopupSpan from "@/framer-components/popup-span"
 
 const skills = [
-	{ name: "HTML", icon: <AiFillHtml5 />, color: "#E34F26" },
-	{ name: "CSS", icon: <BiLogoCss3 />, color: "#1572B6" },
-	{ name: "JavaScript", icon: <BiLogoJavascript />, color: "#F7DF1E" },
-	{ name: "TypeScript", icon: <BiLogoTypescript />, color: "#007ACC" },
-	{ name: "React", icon: <BiLogoReact />, color: "#61DAFB" },
-	{ name: "NextJS", icon: <TbBrandNextjs />, color: "#000000" },
-	{ name: "TailwindCSS", icon: <BiLogoTailwindCss />, color: "#06B6D4" },
-	{ name: "NodeJS", icon: <BiLogoNodejs />, color: "#339933" },
-	{ name: "ExpressJs", icon: <SiExpress />, color: "#000000" },
-	{ name: "MongoDB", icon: <BiLogoMongodb />, color: "#47A248" },
-	{ name: "PostgreSQL", icon: <BiLogoPostgresql />, color: "#336791" },
+	{ name: "HTML", icon: <AiFillHtml5 />, color: "html" },
+	{ name: "CSS", icon: <BiLogoCss3 />, color: "css" },
+	{ name: "JavaScript", icon: <BiLogoJavascript />, color: "js" },
+	{ name: "TypeScript", icon: <BiLogoTypescript />, color: "ts" },
+	{ name: "React", icon: <BiLogoReact />, color: "react" },
+	{ name: "NextJS", icon: <TbBrandNextjs />, color: "next" },
+	{ name: "VueJS", icon: <FaVuejs />, color: "vue" },
+	{ name: "TailwindCSS", icon: <BiLogoTailwindCss />, color: "tailwind" },
+	{ name: "NodeJS", icon: <BiLogoNodejs />, color: "node" },
+	{ name: "ExpressJs", icon: <SiExpress />, color: "express" },
+	{ name: "MongoDB", icon: <BiLogoMongodb />, color: "mongodb" },
+	{ name: "PostgreSQL", icon: <BiLogoPostgresql />, color: "postgres" },
 ]
 
 const Technologies = () => {

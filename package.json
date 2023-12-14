@@ -24,7 +24,7 @@
     "autoprefixer": "latest",
     "encoding": "^0.1.13",
     "postcss": "latest",
-    "tailwindcss": "latest",
+    "tailwindcss": "^3.3.6",
     "typescript": "latest"
   }
 }
