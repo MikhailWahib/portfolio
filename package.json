@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
-  "private": true,
+  "private": "false",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.0",
     "framer-motion": "^10.16.4",
-    "next": "latest",
+    "next": "13.5.4",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
@@ -22,6 +22,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "encoding": "^0.1.13",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"

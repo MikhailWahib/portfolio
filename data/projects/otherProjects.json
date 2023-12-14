@@ -1,18 +1,5 @@
 [
     {
-        "id": 0,
-        "title": "URL Shortener API",
-        "description": "A TypeScript-based URL shortener application built on Node.js and Express, utilizing PostgreSQL for data storage and JWT for user authentication.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/url-Shortener-backend",
-        "techstack": [
-            "Node.js",
-            "Express.js",
-            "TypeScript",
-            "PostgreSQL"
-        ]
-    },
-    {
         "id": 1,
         "title": "Movies REST API",
         "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
@@ -27,6 +14,19 @@
     },
     {
         "id": 1,
+        "title": "World Countries",
+        "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
+        "url": "https://world-countries-mw.vercel.app",
+        "repo": "https://github.com/MikhailWahib/world-countries",
+        "techstack": [
+            "React",
+            "NextJS",
+            "TypeScript",
+            "TailwindCSS"
+        ]
+    },
+    {
+        "id": 2,
         "title": "Blogr Landing Page",
         "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
         "url": "https://blogr-landing-page-mw.netlify.app/",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Easybank Landing page",
         "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
         "url": "https://easybank-landing-page-mw.netlify.app/",
@@ -50,7 +50,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Dual sense product page",
         "description": "An E-commerce product page built with React with responsive layout and animations",
         "url": "https://dual-sense-product-page.vercel.app/",
@@ -62,7 +62,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Sneakers product page",
         "description": "An E-commerce product page built with React with responsive layout ",
         "url": "https://sneakers-product-mw.netlify.app/",

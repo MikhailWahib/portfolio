@@ -1,7 +1,4 @@
-import { promises as fs } from "fs"
-import path from "path"
 import Image from "next/image"
-import Link from "next/link"
 import { Project } from "@/types"
 import FadeinDiv from "@/framer-components/fadein-div"
 
@@ -43,9 +40,28 @@ const ProjectShowcaseCard = ({ data }: Props) => {
 						<a href={data.url} target='_blank' className='mr-4 hover:underline'>
 							Live Demo
 						</a>
-						<a href={data.repo} target='_blank' className='hover:underline'>
-							Source Code
-						</a>
+						{typeof data.repo === "object" ? (
+							<div className='inline'>
+								<a
+									href={data.repo.frontend}
+									target='_blank'
+									className='mr-4 hover:underline'
+								>
+									Frontend Code
+								</a>
+								<a
+									href={data.repo.backend}
+									target='_blank'
+									className='mr-4 hover:underline'
+								>
+									Backend Code
+								</a>
+							</div>
+						) : (
+							<a href={data.repo} target='_blank' className='hover:underline'>
+								Source Code
+							</a>
+						)}
 					</div>
 				</div>
 			</FadeinDiv>
