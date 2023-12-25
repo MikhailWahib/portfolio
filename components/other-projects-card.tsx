@@ -24,6 +24,7 @@ const OtherProjectCard = ({ data }: Props) => {
 						)}
 						<div className='transition hover:text-primary'>
 							<a
+								// @ts-ignore
 								href={data.repo}
 								target='_blank'
 								aria-label='GitHub repository'
