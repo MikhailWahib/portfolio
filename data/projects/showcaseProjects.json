@@ -20,7 +20,7 @@
     {
         "id": 2,
         "title": "FullStack URL Shortener",
-        "description": "An URL shortener application created with Vuejs, Node.js, Express, TypeScript, and MongoDB. The application allows users to shorten long URLs and track their click-through rates.",
+        "description": "An URL shortener application created with Vuejs, Node.js, Express, TypeScript, and PostgreSQL. The application allows users to shorten long URLs and track their click-through rates.",
         "url": "https://url-shortener-mw.vercel.app/",
         "repo": {
             "frontend": "https://github.com/MikhailWahib/url-shortener-frontend",
@@ -31,8 +31,7 @@
             "Node.js",
             "Express",
             "TypeScript",
-            "MongoDB",
-            "Mongoose"
+            "PostgreSQL"
         ],
         "imgPath": "/imgs/url-shortener.jpg"
     },
