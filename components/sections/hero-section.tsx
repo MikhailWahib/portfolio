@@ -6,7 +6,8 @@ import PopupSpan from "@/framer-components/popup-span"
 const Hero = () => {
 	return (
 		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold'>
-			<FadeinDiv className='flex flex-col items-start w-[65rem] mx-auto'>
+			{/* <FadeinDiv className='flex flex-col items-start w-[65rem] mx-auto'> */}
+			<div className='flex flex-col items-start w-[65rem] mx-auto'>
 				<PopupSpan>
 					<p className='text-[1em]'>Welcome! 🙋🏽‍♂️ My name is...</p>
 				</PopupSpan>
@@ -39,7 +40,8 @@ const Hero = () => {
 						className='mt-8'
 					/>
 				</PopupSpan>
-			</FadeinDiv>
+			</div>
+			{/* </FadeinDiv> */}
 		</section>
 	)
 }

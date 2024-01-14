@@ -2,7 +2,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 
-const PopupSpan = ({ children, delay, ...props }: any) => {
+const PopupSpan = ({ children, delay = 0, ...props }: any) => {
 	const ref = useRef(null)
 	const isInView = useInView(ref, { once: true })
 
