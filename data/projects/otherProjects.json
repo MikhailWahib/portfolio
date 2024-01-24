@@ -1,6 +1,16 @@
 [
     {
         "id": 1,
+        "title": "URL Shortener CLI",
+        "description": "Developed a CLI application for URL shortening using Python, The CLI application uses the URL Shortener.",
+        "url": "",
+        "repo": "https://github.com/MikhailWahib/URL-Shortener-cli",
+        "techstack": [
+            "Python"
+        ]
+    },
+    {
+        "id": 2,
         "title": "Movies REST API",
         "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
         "url": "",
@@ -13,7 +23,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 3,
         "title": "World Countries",
         "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
         "url": "https://world-countries-mw.vercel.app",
@@ -26,7 +36,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Blogr Landing Page",
         "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
         "url": "https://blogr-landing-page-mw.netlify.app/",
@@ -38,7 +48,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Easybank Landing page",
         "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
         "url": "https://easybank-landing-page-mw.netlify.app/",
@@ -50,7 +60,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Dual sense product page",
         "description": "An E-commerce product page built with React with responsive layout and animations",
         "url": "https://dual-sense-product-page.vercel.app/",
@@ -62,7 +72,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Sneakers product page",
         "description": "An E-commerce product page built with React with responsive layout ",
         "url": "https://sneakers-product-mw.netlify.app/",

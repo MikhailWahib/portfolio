@@ -5,7 +5,6 @@ import ProjectShowcaseCard from "../project-showcase-card"
 
 import { Project } from "@/types"
 import SectionHeading from "../section-heading"
-import FadeinDiv from "@/framer-components/fadein-div"
 
 const getData = async () => {
 	try {
