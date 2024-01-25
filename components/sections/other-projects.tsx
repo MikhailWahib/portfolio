@@ -31,8 +31,8 @@ const OtherProjects = async () => {
 
 	return (
 		<section className='min-h-0 mb-16'>
-			<div>
-				<SectionHeading title='Other Projects' />
+			<SectionHeading title='Other Projects' />
+			<div className='max-w-[1800px] mx-auto'>
 				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full gap-10 gap-y-10 mt-16'>
 					{projects?.map((project, i) => (
 						<OtherProjectsCard key={i} data={project} />

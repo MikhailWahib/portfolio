@@ -4,8 +4,8 @@ import Technologies from "../technologies"
 const About = () => {
 	return (
 		<section id='about'>
-			<FadeinDiv>
-				<SectionHeading title='About' />
+			<SectionHeading title='About' />
+			<FadeinDiv className='max-w-[1800px] mx-auto'>
 				<div className='mt-16'>
 					<h3 className='text-xl text-primary'>Who am I</h3>
 					<p className='text-xl mt-3 pr-4 leading-[1.75]'>
