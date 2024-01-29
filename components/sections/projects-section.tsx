@@ -1,15 +1,22 @@
-import { promises as fs } from "fs"
+import fs from "fs/promises"
 import path from "path"
-
-import ProjectShowcaseCard from "../project-showcase-card"
-
-import { Project } from "@/types"
 import SectionHeading from "../section-heading"
+import ProjectsCard from "../projects-card"
+
+interface Project {
+	id: number
+	title: string
+	description: string
+	url: string
+	repo: string
+	techstack: string[]
+	imgPath: string
+}
 
 const getData = async () => {
 	try {
 		const fileContents = await fs.readFile(
-			path.join(process.cwd(), "data/projects") + "/showcaseProjects.json",
+			path.join(process.cwd(), "data/projects") + "/projects.json",
 			"utf8"
 		)
 		return JSON.parse(fileContents) as Project[]
@@ -17,16 +24,19 @@ const getData = async () => {
 		console.error(error)
 	}
 }
+
 const Projects = async () => {
 	const projects = await getData()
 	return (
-		<section id='projects'>
+		<section className='min-h-0 mb-16' id='projects'>
 			<SectionHeading title='Projects' />
-			<ul className='w-[min(100%,75rem)] mx-auto mt-16'>
-				{projects?.map((project, i) => {
-					return <ProjectShowcaseCard key={i} data={project} />
-				})}
-			</ul>
+			<div className='max-w-[1800px] mx-auto'>
+				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full gap-10 gap-y-10 mt-16'>
+					{projects?.map((project, i) => (
+						<ProjectsCard key={i} data={project} />
+					))}
+				</ul>
+			</div>
 		</section>
 	)
 }

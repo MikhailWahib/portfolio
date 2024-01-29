@@ -2,7 +2,7 @@ import fs from "fs/promises"
 import path from "path"
 
 import SectionHeading from "../section-heading"
-import OtherProjectsCard from "../other-projects-card"
+import OtherProjectsCard from "../projects-card"
 
 interface Project {
 	id: number
