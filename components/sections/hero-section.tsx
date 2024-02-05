@@ -20,12 +20,12 @@ const Hero = () => {
 					<h2 className='text-[1em] md:text-[1.75em]'>Full-Stack Developer</h2>
 				</PopupSpan>
 				<PopupSpan delay={0.6}>
-					<div className='flex items-center gap-4 text-[.75em] my-5'>
+					<div className='flex items-center gap-4 text-sm my-5'>
 						<FaLocationDot color='#12feaa' /> Cairo, Egypt
 					</div>
 				</PopupSpan>
 				<PopupSpan delay={0.8}>
-					<p className='text-xl leading-[1.5] pr-10 font-normal'>
+					<p className='text-base sm:text-base md:text-xl leading-[1.5] pr-10 font-normal'>
 						I'm a Full-Stack Developer who's dedicated to crafting accessible
 						and performant web applications. With a keen eye for detail and an
 						insatiable passion for learning, I'm always seeking ways to improve

@@ -8,7 +8,7 @@ const About = () => {
 			<FadeinDiv className='max-w-[1800px] mx-auto'>
 				<div className='mt-16'>
 					<h3 className='text-xl text-primary'>Who am I</h3>
-					<p className='text-xl mt-3 pr-4 leading-[1.75]'>
+					<p className='text-base sm:text-base md:text-xl mt-3 pr-4 leading-[1.75]'>
 						I'm a <span className='text-primary'>Full-Stack developer</span>,
 						dedicated to creating engaging and user-friendly web interfaces.{" "}
 						<br /> My passion lies in turning design concepts into interactive

@@ -9,7 +9,7 @@ const ContactSection = () => {
 			<FadeinDiv>
 				<SectionHeading title="let's colaborate" />
 				<div className='flex flex-col items-center gap-8 mx-auto w-[min(55rem,100%)] mt-16'>
-					<p className='text-center text-lg'>
+					<p className='text-sm md:text-lg text-center'>
 						I am actively seeking new opportunities to expand my skills and
 						knowledge in the web development industry. My inbox is always open!
 						If you have any inquiries or simply want to say hello, please don't
