@@ -13,9 +13,10 @@ import {
 	BiLogoPostgresql,
 } from "react-icons/bi"
 import { FaPython, FaVuejs } from "react-icons/fa6"
-import { SiExpress } from "react-icons/si"
+import { SiExpress, SiRubyonrails } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
 import { FaExternalLinkAlt } from "react-icons/fa"
+import { DiRuby } from "react-icons/di"
 
 interface Props {
 	data: Project
@@ -25,6 +26,7 @@ const iconsMap: { [key: string]: any } = {
 	js: <BiLogoJavascript />,
 	ts: <BiLogoTypescript />,
 	py: <FaPython />,
+	ruby: <DiRuby />,
 	html: <AiFillHtml5 />,
 	css: <BiLogoCss3 />,
 	react: <BiLogoReact />,
@@ -33,6 +35,7 @@ const iconsMap: { [key: string]: any } = {
 	tailwind: <BiLogoTailwindCss />,
 	node: <BiLogoNodejs />,
 	express: <SiExpress />,
+	rails: <SiRubyonrails />,
 	mongodb: <BiLogoMongodb />,
 	postgres: <BiLogoPostgresql />,
 }
