@@ -26,11 +26,24 @@
             "node",
             "express",
             "ts",
-            "postgres"
+            "postgres",
+            "jest"
         ]
     },
     {
         "id": 3,
+        "title": "Football Fixtures API",
+        "description": "Developed a RESTful API using Python, Flask, and Redis. The API allows users to fetch live, upcoming, and past Football fixtures.",
+        "url": "",
+        "repo": "https://github.com/MikhailWahib/football-fixtures-api",
+        "techstack": [
+            "py",
+            "flask",
+            "redis"
+        ]
+    },
+    {
+        "id": 4,
         "title": "FullStack Tasks Manager Website",
         "description": "A Full-Stack web application built with Ruby on Rails. The application allows users to create, update, and delete tasks, with user authentication.",
         "url": "https://rails-tasks-management.onrender.com/",
@@ -41,7 +54,22 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
+        "title": "Vending Machine API",
+        "description": "A vending machine API built using Nodejs, TypeScript and sqlite3 with prisma ORM.",
+        "url": "",
+        "repo": "https://github.com/MikhailWahib/vending-machine-api",
+        "techstack": [
+            "node",
+            "ts",
+            "prisma",
+            "typescript",
+            "jest",
+            "sqlite"
+        ]
+    },
+    {
+        "id": 6,
         "title": "Space Tourism",
         "description": "A Single Page Application (SPA) created with React and Tailwind CSS for exploring space tourism destinations. Enjoy an immersive and user-friendly experience as you navigate the cosmos.",
         "url": "https://space-tourism-mw.netlify.app",
@@ -53,7 +81,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "URL Shortener CLI",
         "description": "Developed a CLI application for URL shortening using Python, The CLI application uses the URL Shortener API.",
         "url": "",
@@ -63,20 +91,7 @@
         ]
     },
     {
-        "id": 6,
-        "title": "Movies REST API",
-        "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/Movies-API",
-        "techstack": [
-            "node",
-            "express",
-            "ts",
-            "mongodb"
-        ]
-    },
-    {
-        "id": 7,
+        "id": 8,
         "title": "World Countries",
         "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
         "url": "https://world-countries-mw.vercel.app",
@@ -89,7 +104,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Blogr Landing Page",
         "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
         "url": "https://blogr-landing-page-mw.netlify.app/",
@@ -101,7 +116,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "Easybank Landing page",
         "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
         "url": "https://easybank-landing-page-mw.netlify.app/",
@@ -113,7 +128,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 11,
         "title": "Dual sense product page",
         "description": "An E-commerce product page built with React with responsive layout and animations",
         "url": "https://dual-sense-product-page.vercel.app/",
@@ -125,7 +140,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 12,
         "title": "Sneakers product page",
         "description": "An E-commerce product page built with React with responsive layout ",
         "url": "https://sneakers-product-mw.netlify.app/",
@@ -134,6 +149,19 @@
             "react",
             "js",
             "css"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Movies REST API",
+        "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
+        "url": "",
+        "repo": "https://github.com/MikhailWahib/Movies-API",
+        "techstack": [
+            "node",
+            "express",
+            "ts",
+            "mongodb"
         ]
     }
 ]

@@ -13,7 +13,13 @@ import {
 	BiLogoPostgresql,
 } from "react-icons/bi"
 import { FaPython, FaVuejs } from "react-icons/fa6"
-import { SiExpress, SiRubyonrails } from "react-icons/si"
+import {
+	SiExpress,
+	SiRubyonrails,
+	SiFlask,
+	SiJest,
+	SiRedis,
+} from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
 import { FaExternalLinkAlt } from "react-icons/fa"
 import { DiRuby } from "react-icons/di"
@@ -36,8 +42,11 @@ const iconsMap: { [key: string]: any } = {
 	node: <BiLogoNodejs />,
 	express: <SiExpress />,
 	rails: <SiRubyonrails />,
+	flask: <SiFlask />,
 	mongodb: <BiLogoMongodb />,
 	postgres: <BiLogoPostgresql />,
+	redis: <SiRedis />,
+	jest: <SiJest />,
 }
 
 const ProjectsCard = ({ data }: Props) => {

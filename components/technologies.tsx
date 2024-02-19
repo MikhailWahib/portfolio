@@ -12,7 +12,13 @@ import {
 import { TbBrandCpp } from "react-icons/tb"
 import { FaVuejs, FaPython } from "react-icons/fa"
 import { TbBrandNextjs } from "react-icons/tb"
-import { SiExpress, SiRubyonrails } from "react-icons/si"
+import {
+	SiExpress,
+	SiRubyonrails,
+	SiFlask,
+	SiJest,
+	SiRedis,
+} from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 import PopupSpan from "@/framer-components/popup-span"
 
@@ -31,8 +37,11 @@ const skills = [
 	{ name: "NodeJS", icon: <BiLogoNodejs /> },
 	{ name: "ExpressJs", icon: <SiExpress /> },
 	{ name: "Ruby on Rails", icon: <SiRubyonrails /> },
+	{ name: "Flask", icon: <SiFlask /> },
 	{ name: "MongoDB", icon: <BiLogoMongodb /> },
 	{ name: "PostgreSQL", icon: <BiLogoPostgresql /> },
+	{ name: "Redis", icon: <SiRedis /> },
+	{ name: "Jest", icon: <SiJest /> },
 ]
 
 const Technologies = () => {
