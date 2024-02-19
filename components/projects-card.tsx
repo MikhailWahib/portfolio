@@ -19,6 +19,8 @@ import {
 	SiFlask,
 	SiJest,
 	SiRedis,
+	SiPrisma,
+	SiSqlite,
 } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
 import { FaExternalLinkAlt } from "react-icons/fa"
@@ -46,6 +48,8 @@ const iconsMap: { [key: string]: any } = {
 	mongodb: <BiLogoMongodb />,
 	postgres: <BiLogoPostgresql />,
 	redis: <SiRedis />,
+	sqlite: <SiSqlite />,
+	prisma: <SiPrisma />,
 	jest: <SiJest />,
 }
 

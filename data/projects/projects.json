@@ -62,10 +62,10 @@
         "techstack": [
             "node",
             "ts",
-            "prisma",
             "typescript",
-            "jest",
-            "sqlite"
+            "sqlite",
+            "prisma",
+            "jest"
         ]
     },
     {
