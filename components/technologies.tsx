@@ -46,7 +46,7 @@ const skills = [
 
 const Technologies = () => {
 	return (
-		<ul className='flex flex-wrap gap-x-4 text-6xl mt-5'>
+		<ul className='flex flex-wrap gap-x-4 gap-y-1 text-6xl mt-5'>
 			{skills.map((skill, i) => {
 				return (
 					<li
