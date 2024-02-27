@@ -2,10 +2,15 @@ import { FaLocationDot } from "react-icons/fa6"
 import LinkBtn from "../link-btn"
 import FadeinDiv from "@/framer-components/fadein-div"
 import PopupSpan from "@/framer-components/popup-span"
+import { Spotlight } from "../ui/spotlight"
 
 const Hero = () => {
 	return (
 		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold'>
+			<Spotlight
+				className='-top-40 left-0 md:left-60 md:-top-20'
+				fill='white'
+			/>
 			{/* <FadeinDiv className='flex flex-col items-start w-[65rem] mx-auto'> */}
 			<div className='flex flex-col items-start w-[65rem] mx-auto'>
 				<PopupSpan>

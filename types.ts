@@ -5,7 +5,7 @@ export interface Project {
 	title: string
 	description: string
 	url: string
-	repo: Repo
+	repo: string
 	techstack: string[]
 	loginCredintials?: {
 		email: string

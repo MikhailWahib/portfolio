@@ -2,6 +2,8 @@ import fs from "fs/promises"
 import path from "path"
 import SectionHeading from "../section-heading"
 import ProjectsCard from "../projects-card"
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card"
+import Image from "next/image"
 
 interface Project {
 	id: number
@@ -31,7 +33,7 @@ const Projects = async () => {
 		<section className='min-h-0 mb-16' id='projects'>
 			<SectionHeading title='Projects' />
 			<div className='max-w-[1800px] mx-auto'>
-				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full gap-10 gap-y-10 mt-16'>
+				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full mt-16 gap-10'>
 					{projects?.map((project, i) => (
 						<ProjectsCard key={i} data={project} />
 					))}
