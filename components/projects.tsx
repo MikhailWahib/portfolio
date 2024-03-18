@@ -35,10 +35,10 @@ const ProjectsSectionNav = ({ setFilter }: any) => {
 		}
 	}
 	return (
-		<nav className='relative top-8 flex justify-center gap-5'>
+		<nav className='relative top-8 flex justify-center gap-2 sm:gap-5'>
 			{cats.map((c) => (
 				<button
-					className='text-primary text-md font-bold capitalize hover:underline'
+					className='text-primary text-base sm:text-lg font-bold capitalize hover:underline'
 					onClick={() => handleCLick(c)}
 				>
 					{c}
