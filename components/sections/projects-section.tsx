@@ -1,17 +1,8 @@
 import fs from "fs/promises"
 import path from "path"
 import SectionHeading from "../section-heading"
-import ProjectsCard from "../projects-card"
-
-interface Project {
-	id: number
-	title: string
-	description: string
-	url: string
-	repo: string
-	techstack: string[]
-	imgPath: string
-}
+import Projects from "../projects"
+import { Project } from "@/types"
 
 const getData = async () => {
 	try {
@@ -25,20 +16,16 @@ const getData = async () => {
 	}
 }
 
-const Projects = async () => {
+const ProjectsSection = async () => {
 	const projects = await getData()
 	return (
 		<section className='min-h-0 mb-16' id='projects'>
 			<SectionHeading title='Projects' />
 			<div className='max-w-[1800px] mx-auto'>
-				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full gap-10 gap-y-10 mt-16'>
-					{projects?.map((project, i) => (
-						<ProjectsCard key={i} data={project} />
-					))}
-				</ul>
+				<Projects projects={projects} />
 			</div>
 		</section>
 	)
 }
 
-export default Projects
+export default ProjectsSection

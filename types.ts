@@ -12,4 +12,7 @@ export interface Project {
 		password: string
 	}
 	imgPath: string
+	category: ProjectCategories
 }
+
+export type ProjectCategories = "frontend" | "backend" | "fullstack" | "other"

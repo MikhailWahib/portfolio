@@ -3,7 +3,7 @@ import LinkBtn from "../link-btn"
 import FadeinDiv from "@/framer-components/fadein-div"
 import PopupSpan from "@/framer-components/popup-span"
 
-const Hero = () => {
+const HeroSection = () => {
 	return (
 		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold'>
 			{/* <FadeinDiv className='flex flex-col items-start w-[65rem] mx-auto'> */}
@@ -46,4 +46,4 @@ const Hero = () => {
 	)
 }
 
-export default Hero
+export default HeroSection

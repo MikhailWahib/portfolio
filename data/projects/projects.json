@@ -10,7 +10,8 @@
             "next",
             "ts",
             "tailwind"
-        ]
+        ],
+        "category": "fullstack"
     },
     {
         "id": 2,
@@ -28,7 +29,8 @@
             "ts",
             "postgres",
             "jest"
-        ]
+        ],
+        "category": "fullstack"
     },
     {
         "id": 3,
@@ -40,7 +42,8 @@
             "py",
             "flask",
             "redis"
-        ]
+        ],
+        "category": "backend"
     },
     {
         "id": 4,
@@ -51,7 +54,8 @@
         "techstack": [
             "ruby",
             "rails"
-        ]
+        ],
+        "category": "fullstack"
     },
     {
         "id": 5,
@@ -66,7 +70,8 @@
             "sqlite",
             "prisma",
             "jest"
-        ]
+        ],
+        "category": "backend"
     },
     {
         "id": 6,
@@ -78,7 +83,8 @@
             "react",
             "js",
             "tailwind"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 7,
@@ -88,7 +94,8 @@
         "repo": "https://github.com/MikhailWahib/URL-Shortener-cli",
         "techstack": [
             "py"
-        ]
+        ],
+        "category": "other"
     },
     {
         "id": 8,
@@ -101,7 +108,8 @@
             "next",
             "ts",
             "tailwind"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 9,
@@ -113,7 +121,8 @@
             "html",
             "css",
             "js"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 10,
@@ -125,7 +134,8 @@
             "html",
             "css",
             "js"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 11,
@@ -137,7 +147,8 @@
             "react",
             "ts",
             "tailwind"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 12,
@@ -149,7 +160,8 @@
             "react",
             "js",
             "css"
-        ]
+        ],
+        "category": "frontend"
     },
     {
         "id": 13,
@@ -162,6 +174,7 @@
             "express",
             "ts",
             "mongodb"
-        ]
+        ],
+        "category": "backend"
     }
 ]

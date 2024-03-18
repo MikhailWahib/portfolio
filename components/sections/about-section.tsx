@@ -1,7 +1,7 @@
 import FadeinDiv from "@/framer-components/fadein-div"
 import SectionHeading from "../section-heading"
 import Technologies from "../technologies"
-const About = () => {
+const AboutSection = () => {
 	return (
 		<section id='about'>
 			<SectionHeading title='About' />
@@ -30,4 +30,4 @@ const About = () => {
 	)
 }
 
-export default About
+export default AboutSection
