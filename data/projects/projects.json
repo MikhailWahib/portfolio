@@ -7,7 +7,9 @@
         "techstack": [
             "py"
         ],
-        "category": "other"
+        "tags": [
+            "other"
+        ]
     },
     {
         "id": 2,
@@ -21,7 +23,10 @@
             "ts",
             "tailwind"
         ],
-        "category": "fullstack"
+        "tags": [
+            "fullstack",
+            "frontend"
+        ]
     },
     {
         "id": 3,
@@ -40,7 +45,10 @@
             "postgres",
             "jest"
         ],
-        "category": "fullstack"
+        "tags": [
+            "fullstack",
+            "backend"
+        ]
     },
     {
         "id": 4,
@@ -53,7 +61,9 @@
             "flask",
             "redis"
         ],
-        "category": "backend"
+        "tags": [
+            "backend"
+        ]
     },
     {
         "id": 5,
@@ -65,7 +75,10 @@
             "ruby",
             "rails"
         ],
-        "category": "fullstack"
+        "tags": [
+            "fullstack",
+            "backend"
+        ]
     },
     {
         "id": 6,
@@ -81,7 +94,9 @@
             "prisma",
             "jest"
         ],
-        "category": "backend"
+        "tags": [
+            "backend"
+        ]
     },
     {
         "id": 7,
@@ -94,7 +109,9 @@
             "js",
             "tailwind"
         ],
-        "category": "frontend"
+        "tags": [
+            "frontend"
+        ]
     },
     {
         "id": 8,
@@ -105,7 +122,9 @@
         "techstack": [
             "py"
         ],
-        "category": "other"
+        "tags": [
+            "other"
+        ]
     },
     {
         "id": 9,
@@ -119,7 +138,9 @@
             "ts",
             "tailwind"
         ],
-        "category": "frontend"
+        "tags": [
+            "frontend"
+        ]
     },
     {
         "id": 10,
@@ -132,7 +153,9 @@
             "css",
             "js"
         ],
-        "category": "frontend"
+        "tags": [
+            "frontend"
+        ]
     },
     {
         "id": 11,
@@ -145,7 +168,9 @@
             "css",
             "js"
         ],
-        "category": "frontend"
+        "tags": [
+            "frontend"
+        ]
     },
     {
         "id": 12,
@@ -158,7 +183,9 @@
             "ts",
             "tailwind"
         ],
-        "category": "frontend"
+        "tags": [
+            "frontend"
+        ]
     },
     {
         "id": 13,
@@ -171,20 +198,8 @@
             "js",
             "css"
         ],
-        "category": "frontend"
-    },
-    {
-        "id": 14,
-        "title": "Movies REST API",
-        "description": "Developed a RESTful API for a movie database using Node.js, Express.js, TypeScript, and MongoDB. The API provides endpoints for retrieving, creating, updating, and deleting movie data and user authentication.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/Movies-API",
-        "techstack": [
-            "node",
-            "express",
-            "ts",
-            "mongodb"
-        ],
-        "category": "backend"
+        "tags": [
+            "frontend"
+        ]
     }
 ]

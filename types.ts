@@ -12,7 +12,7 @@ export interface Project {
 		password: string
 	}
 	imgPath: string
-	category: ProjectCategories
+	tags: Tags
 }
 
-export type ProjectCategories = "frontend" | "backend" | "fullstack" | "other"
+export type Tags = "frontend" | "backend" | "fullstack" | "other"

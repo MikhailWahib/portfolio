@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import { Project, ProjectCategories } from "@/types"
+import { Project, Tags } from "@/types"
 import ProjectsCard from "./projects-card"
 
 interface Props {
@@ -8,14 +8,14 @@ interface Props {
 }
 
 const Projects = ({ projects }: Props) => {
-	const [filter, setFilter] = useState<ProjectCategories | null>()
+	const [filter, setFilter] = useState<Tags | null>()
 	return (
 		<>
 			<ProjectsSectionNav setFilter={setFilter} />
 			<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center h-full gap-10 gap-y-10 mt-16'>
 				{filter
 					? projects
-							?.filter((project) => project.category === filter)
+							?.filter((project) => project.tags.includes(filter))
 							?.map((project, i) => <ProjectsCard key={i} data={project} />)
 					: projects?.map((project, i) => (
 							<ProjectsCard key={i} data={project} />
