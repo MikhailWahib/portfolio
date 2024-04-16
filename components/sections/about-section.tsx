@@ -9,7 +9,7 @@ const About = () => {
 				<div className='mt-16'>
 					<h3 className='text-xl text-primary'>Who am I</h3>
 					<p className='text-base sm:text-base md:text-xl mt-5'>
-						I'm <span className='text-primary'>Mikhai</span>, a full-stack
+						I'm <span className='text-primary'>Mikhail</span>, a full-stack
 						software developer fueled by an insatiable thirst for knowledge.{" "}
 						<br /> I relish the opportunity to tackle new challenges and thrive
 						on continuous growth in the dynamic world of technology. <br /> With
