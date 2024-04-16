@@ -59,12 +59,9 @@ const iconsMap: { [key: string]: any } = {
 
 const ProjectsCard = ({ data }: Props) => {
 	return (
-		<CardContainer className='inter-var'>
-			<CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] max-w-[500px] h-auto rounded-xl p-6 border'>
-				<CardItem
-					translateZ='50'
-					className='text-xl font-bold text-neutral-600 dark:text-white'
-				>
+		<CardContainer className='inter-var h-full'>
+			<CardBody className='flex flex-col bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black border-primary/[0.25] max-w-[600px] w-auto h-full rounded-xl p-6 border'>
+				<CardItem translateZ='50' className='text-xl font-bold text-primary'>
 					{data.title}
 				</CardItem>
 				<CardItem
@@ -74,10 +71,10 @@ const ProjectsCard = ({ data }: Props) => {
 				>
 					{data.description}
 				</CardItem>
-				<CardItem translateZ='100' className='w-full mt-4'>
+				{/* <CardItem translateZ='100' className='w-full mt-4'>
 					{data.imgPath ? (
 						<Image
-							src='/imgs/movibes.jpg'
+							src={data.imgPath}
 							height='1000'
 							width='1000'
 							className='h-60 w-full object-fit rounded-xl group-hover/card:shadow-xl'
@@ -88,30 +85,32 @@ const ProjectsCard = ({ data }: Props) => {
 							<h3 className='text-6xl font-extrabold'>API</h3>
 						</div>
 					)}
-				</CardItem>
+				</CardItem> */}
 				<CardItem
 					translateZ={20}
 					as='ul'
-					className='flex my-10 text-xl gap-x-2'
+					className='flex my-10 text-xl gap-x-2 text-primary'
 				>
 					{data.techstack.map((tech) => {
 						return iconsMap[tech]
 					})}
 				</CardItem>
-				<div className='flex justify-between items-center'>
-					<CardItem
-						translateZ={20}
-						as='button'
-						className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:text-primary'
-					>
-						<a href={data.url} target='_blank'>
-							Live Demo →
-						</a>
-					</CardItem>
+				<div className='flex justify-between items-center mt-auto'>
+					{data.url && (
+						<CardItem
+							translateZ={20}
+							as='button'
+							className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:text-primary'
+						>
+							<a href={data.url} target='_blank'>
+								Live Demo →
+							</a>
+						</CardItem>
+					)}
 					<CardItem
 						translateZ={20}
 						as='div'
-						className='text-white text-3xl font-bold hover:text-primary'
+						className='text-white text-3xl font-bold hover:text-primary ml-auto'
 					>
 						<a href={data.repo} target='_blank'>
 							<AiFillGithub />
