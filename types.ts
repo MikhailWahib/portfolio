@@ -7,9 +7,6 @@ export interface Project {
 	url: string
 	repo: string
 	techstack: string[]
-	loginCredintials?: {
-		email: string
-		password: string
-	}
-	imgPath: string
+	tags: string[]
+	imgPath?: string
 }
