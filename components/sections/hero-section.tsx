@@ -11,7 +11,6 @@ const Hero = () => {
 				className='-top-40 left-0 md:left-60 md:-top-20'
 				fill='white'
 			/>
-			{/* <FadeinDiv className='flex flex-col items-start w-[65rem] mx-auto'> */}
 			<div className='flex flex-col items-start w-[65rem] mx-auto'>
 				<PopupSpan>
 					<p className='text-[1em]'>Welcome! 🙋🏽‍♂️ My name is...</p>
@@ -26,7 +25,7 @@ const Hero = () => {
 				</PopupSpan>
 				<PopupSpan delay={0.6}>
 					<div className='flex items-center gap-4 text-sm my-5'>
-						<FaLocationDot color='#12feaa' /> Cairo, Egypt
+						<FaLocationDot className='text-primary' /> Cairo, Egypt
 					</div>
 				</PopupSpan>
 				<PopupSpan delay={0.8}>
@@ -46,7 +45,6 @@ const Hero = () => {
 					/>
 				</PopupSpan>
 			</div>
-			{/* </FadeinDiv> */}
 		</section>
 	)
 }
