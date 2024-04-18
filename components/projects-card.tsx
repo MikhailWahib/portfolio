@@ -27,6 +27,7 @@ import {
 import { TbBrandNextjs } from "react-icons/tb"
 import { DiRuby } from "react-icons/di"
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card"
+import { useRef } from "react"
 // import Image from "next/image"
 
 interface Props {
@@ -57,6 +58,7 @@ const iconsMap: { [key: string]: any } = {
 }
 
 const ProjectsCard = ({ data }: Props) => {
+	const reposDivRef = useRef<HTMLDivElement>(null)
 	return (
 		<FadeinLi className='h-full'>
 			<CardContainer className='h-full'>
@@ -110,11 +112,48 @@ const ProjectsCard = ({ data }: Props) => {
 						<CardItem
 							translateZ={20}
 							as='div'
-							className='text-white text-3xl font-bold hover:text-primary ml-auto'
+							className='text-white text-3xl font-bold ml-auto'
 						>
-							<a href={data.repo} target='_blank'>
-								<AiFillGithub />
-							</a>
+							{typeof data.repo === "string" ? (
+								<a
+									href={data.repo}
+									target='_blank'
+									className='transition hover:text-primary'
+								>
+									<AiFillGithub />
+								</a>
+							) : (
+								<div className='relative'>
+									<button
+										className='hover:text-primary transition'
+										onClick={() => {
+											reposDivRef.current?.classList.toggle("hidden")
+											reposDivRef.current?.classList.toggle("flex")
+										}}
+									>
+										<AiFillGithub />
+									</button>
+									<div
+										className='hidden absolute right-10 top-2 gap-2 text-xs'
+										ref={reposDivRef}
+									>
+										<a
+											href={data.repo.frontend}
+											target='_blank'
+											className='hover:text-primary transition'
+										>
+											Frontend
+										</a>
+										<a
+											href={data.repo.backend}
+											target='_blank'
+											className='hover:text-primary transition'
+										>
+											Backend
+										</a>
+									</div>
+								</div>
+							)}
 						</CardItem>
 					</div>
 				</CardBody>

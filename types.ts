@@ -5,7 +5,7 @@ export interface Project {
 	title: string
 	description: string
 	url: string
-	repo: string
+	repo: string | { frontend: string; backend: string }
 	techstack: string[]
 	tags: string[]
 	imgPath?: string
