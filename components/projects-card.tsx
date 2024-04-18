@@ -1,3 +1,5 @@
+"use client"
+
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai"
 
 import { Project } from "@/types"
@@ -23,8 +25,10 @@ import {
 	SiSqlite,
 } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
-import { FaExternalLinkAlt } from "react-icons/fa"
 import { DiRuby } from "react-icons/di"
+import { CardContainer, CardBody, CardItem } from "./ui/3d-card"
+import { useRef } from "react"
+// import Image from "next/image"
 
 interface Props {
 	data: Project
@@ -54,40 +58,106 @@ const iconsMap: { [key: string]: any } = {
 }
 
 const ProjectsCard = ({ data }: Props) => {
+	const reposDivRef = useRef<HTMLDivElement>(null)
 	return (
-		<FadeinLi className='relative border-2 border-primary before:content-[""] before:absolute before:top-3 before:left-3 before:w-full before:h-full before:border-2 before:border-primary before:-z-10 before:transition-all hover:before:left-2 hover:before:top-2'>
-			<div className='flex flex-col gap-5 h-full p-5 bg-background'>
-				<div className='flex items-center justify-between'>
-					{data.url ? (
-						<a href={data.url} target='_blank'>
-							<h3 className='inline-block text-lg text-primary font-bold hover:underline'>
-								{data.title}
-							</h3>
-							<span className='inline-block ml-2 text-primary text-sm'>
-								<FaExternalLinkAlt />
-							</span>
-						</a>
+		<FadeinLi className='h-full'>
+			<CardContainer className='h-full'>
+				<CardBody className='flex flex-col bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black border-primary/[0.25] max-w-[600px] w-auto h-full rounded-xl p-6 border'>
+					<CardItem translateZ='50' className='text-xl font-bold text-primary'>
+						{data.title}
+					</CardItem>
+					<CardItem
+						as='p'
+						translateZ='60'
+						className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'
+					>
+						{data.description}
+					</CardItem>
+					{/* <CardItem translateZ='100' className='w-full mt-4'>
+					{data.imgPath ? (
+						<Image
+						src={data.imgPath}
+						height='1000'
+							width='1000'
+							className='h-60 w-full object-fit rounded-xl group-hover/card:shadow-xl'
+							alt='thumbnail'
+						/>
 					) : (
-						<h3 className='text-lg text-primary font-bold'>{data.title}</h3>
+						<div className='w-full h-full text-center'>
+						<h3 className='text-6xl font-extrabold'>API</h3>
+						</div>
 					)}
-					<div className='transition hover:text-primary'>
-						<a
-							// @ts-ignore
-							href={data.repo}
-							target='_blank'
-							aria-label='GitHub repository'
+				</CardItem> */}
+					<CardItem
+						translateZ={20}
+						as='ul'
+						className='flex my-10 text-xl gap-x-2 text-primary'
+					>
+						{data.techstack.map((tech) => {
+							return iconsMap[tech]
+						})}
+					</CardItem>
+					<div className='flex justify-between items-center mt-auto'>
+						{data.url && (
+							<CardItem
+								translateZ={20}
+								as='button'
+								className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:text-primary'
+							>
+								<a href={data.url} target='_blank'>
+									Live Demo →
+								</a>
+							</CardItem>
+						)}
+						<CardItem
+							translateZ={20}
+							as='div'
+							className='text-white text-3xl font-bold ml-auto'
 						>
-							<AiFillGithub size={32} />
-						</a>
+							{typeof data.repo === "string" ? (
+								<a
+									href={data.repo}
+									target='_blank'
+									className='transition hover:text-primary'
+								>
+									<AiFillGithub />
+								</a>
+							) : (
+								<div className='relative'>
+									<button
+										className='hover:text-primary transition'
+										onClick={() => {
+											reposDivRef.current?.classList.toggle("hidden")
+											reposDivRef.current?.classList.toggle("flex")
+										}}
+									>
+										<AiFillGithub />
+									</button>
+									<div
+										className='hidden absolute right-10 top-2 gap-2 text-xs'
+										ref={reposDivRef}
+									>
+										<a
+											href={data.repo.frontend}
+											target='_blank'
+											className='hover:text-primary transition'
+										>
+											Frontend
+										</a>
+										<a
+											href={data.repo.backend}
+											target='_blank'
+											className='hover:text-primary transition'
+										>
+											Backend
+										</a>
+									</div>
+								</div>
+							)}
+						</CardItem>
 					</div>
-				</div>
-				<p>{data.description}</p>
-				<div className='flex gap-2 text-2xl text-primary mt-auto'>
-					{data.techstack.map((tech) => (
-						<span key={tech}>{iconsMap[tech]}</span>
-					))}
-				</div>
-			</div>
+				</CardBody>
+			</CardContainer>
 		</FadeinLi>
 	)
 }

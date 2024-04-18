@@ -5,14 +5,10 @@ export interface Project {
 	title: string
 	description: string
 	url: string
-	repo: Repo
+	repo: string | { frontend: string; backend: string }
 	techstack: string[]
-	loginCredintials?: {
-		email: string
-		password: string
-	}
-	imgPath: string
-	tags: Tags
+	tags: string[]
+	imgPath?: string
 }
 
 export type Tags = "frontend" | "backend" | "fullstack" | "other"

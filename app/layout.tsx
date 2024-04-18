@@ -11,7 +11,7 @@ const roboto = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-	title: "Mikhail Wahib - Software Developer",
+	title: "Mikhail Wahib - Frontend Developer",
 	description:
 		"Explore a web developer's portfolio featuring a collection of web projects and front-end expertise. Discover a passion for web development and software engineering in this curated showcase of creativity and code.",
 	keywords: [
@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${roboto.className} bg-background`}>
+			<body className={`${roboto.className} bg-background text-white`}>
 				<Header />
 				{children}
 				<Analytics />

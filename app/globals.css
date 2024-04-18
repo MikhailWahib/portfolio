@@ -6,11 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: black;
-  color: #fff;
-}
-
 
 ::selection {
   background-color: #12feaa;

@@ -66,21 +66,6 @@
         ]
     },
     {
-        "id": 5,
-        "title": "FullStack Tasks Manager Website",
-        "description": "A Full-Stack web application built with Ruby on Rails. The application allows users to create, update, and delete tasks, with user authentication.",
-        "url": "https://rails-tasks-management.onrender.com/",
-        "repo": "https://github.com/MikhailWahib/rails-tasks-management",
-        "techstack": [
-            "ruby",
-            "rails"
-        ],
-        "tags": [
-            "fullstack",
-            "backend"
-        ]
-    },
-    {
         "id": 6,
         "title": "Vending Machine API",
         "description": "A vending machine API built using Nodejs, TypeScript and sqlite3 with prisma ORM.",
@@ -95,6 +80,21 @@
             "jest"
         ],
         "tags": [
+            "backend"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "FullStack Tasks Manager Website",
+        "description": "A Full-Stack web application built with Ruby on Rails. The application allows users to create, update, and delete tasks, with user authentication.",
+        "url": "https://rails-tasks-management.onrender.com/",
+        "repo": "https://github.com/MikhailWahib/rails-tasks-management",
+        "techstack": [
+            "ruby",
+            "rails"
+        ],
+        "tags": [
+            "fullstack",
             "backend"
         ]
     },
