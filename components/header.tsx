@@ -32,7 +32,7 @@ const Header = () => {
 				</a>
 			</div>
 			<nav
-				className={`flex flex-col md:flex-row justify-center items-center absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-backgroundSecondary md:bg-transparent transition-all ${
+				className={`flex flex-col md:flex-row justify-center items-center absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-background md:bg-transparent transition-all ${
 					open ? "max-h-screen" : "max-h-0"
 				} md:max-h-full z-40`}
 			>
