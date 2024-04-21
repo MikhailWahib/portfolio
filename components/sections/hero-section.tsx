@@ -6,11 +6,8 @@ import { Spotlight } from "../ui/spotlight"
 
 const HeroSection = () => {
 	return (
-		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold'>
-			<Spotlight
-				className='-top-40 left-0 md:left-60 md:-top-20'
-				fill='white'
-			/>
+		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold overflow-x-hidden'>
+			<Spotlight className='hidden md:block' fill='white' />
 			<div className='flex flex-col items-start w-[65rem] mx-auto'>
 				<PopupSpan>
 					<p className='text-[1em]'>Welcome! 🙋🏽‍♂️ My name is...</p>

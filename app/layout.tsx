@@ -37,7 +37,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${roboto.className} bg-background text-white`}>
+			<body
+				className={`${roboto.className} bg-background text-white overflow-x-hidden`}
+			>
 				<Header />
 				{children}
 				<Analytics />
