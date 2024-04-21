@@ -18,7 +18,7 @@ const ProjectsSectionNav = ({ setFilter }: any) => {
 			{filters.map((f) => (
 				<button
 					key={f}
-					className='text-primary text-base sm:text-lg font-bold capitalize hover:underline'
+					className='text-primary text-sm sm:text-lg font-bold capitalize hover:underline'
 					onClick={() => handleCLick(f)}
 				>
 					{f}
