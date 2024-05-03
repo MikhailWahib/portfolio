@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import { AiFillGithub, AiFillHtml5 } from "react-icons/ai"
+import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 
-import { Project } from "@/types"
-import FadeinLi from "@/framer-components/fadein-li"
+import { Project } from '@/types'
+import FadeinLi from '@/framer-components/fadein-li'
 import {
 	BiLogoJavascript,
 	BiLogoTypescript,
@@ -13,8 +13,8 @@ import {
 	BiLogoNodejs,
 	BiLogoMongodb,
 	BiLogoPostgresql,
-} from "react-icons/bi"
-import { FaPython, FaVuejs } from "react-icons/fa6"
+} from 'react-icons/bi'
+import { FaPython, FaVuejs } from 'react-icons/fa6'
 import {
 	SiExpress,
 	SiRubyonrails,
@@ -23,11 +23,11 @@ import {
 	SiRedis,
 	SiPrisma,
 	SiSqlite,
-} from "react-icons/si"
-import { TbBrandNextjs } from "react-icons/tb"
-import { DiRuby } from "react-icons/di"
-import { CardContainer, CardBody, CardItem } from "./ui/3d-card"
-import { useRef } from "react"
+} from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { DiRuby } from 'react-icons/di'
+import { CardContainer, CardBody, CardItem } from './ui/3d-card'
+import { useRef } from 'react'
 // import Image from "next/image"
 
 interface Props {
@@ -93,8 +93,8 @@ const ProjectsCard = ({ data }: Props) => {
 						as='ul'
 						className='flex my-10 text-xl gap-x-2 text-primary'
 					>
-						{data.techstack.map((tech) => {
-							return iconsMap[tech]
+						{data.techstack.map((tech, i) => {
+							return <span key={tech + i}>{iconsMap[tech]}</span>
 						})}
 					</CardItem>
 					<div className='flex justify-between items-center mt-auto'>
@@ -114,7 +114,7 @@ const ProjectsCard = ({ data }: Props) => {
 							as='div'
 							className='text-white text-3xl font-bold ml-auto'
 						>
-							{typeof data.repo === "string" ? (
+							{typeof data.repo === 'string' ? (
 								<a
 									href={data.repo}
 									target='_blank'
@@ -127,8 +127,8 @@ const ProjectsCard = ({ data }: Props) => {
 									<button
 										className='hover:text-primary transition'
 										onClick={() => {
-											reposDivRef.current?.classList.toggle("hidden")
-											reposDivRef.current?.classList.toggle("flex")
+											reposDivRef.current?.classList.toggle('hidden')
+											reposDivRef.current?.classList.toggle('flex')
 										}}
 									>
 										<AiFillGithub />

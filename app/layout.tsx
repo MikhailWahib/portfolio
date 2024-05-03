@@ -1,32 +1,46 @@
-import "./globals.css"
-import Header from "@/components/header"
-import type { Metadata } from "next"
-import { Roboto_Mono } from "next/font/google"
+import './globals.css'
+import Header from '@/components/header'
+import type { Metadata } from 'next'
+import { Roboto_Mono } from 'next/font/google'
 
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react'
 
 const roboto = Roboto_Mono({
-	subsets: ["latin"],
-	weight: ["400", "500", "700"],
+	subsets: ['latin'],
+	weight: ['400', '500', '700'],
 })
 
 export const metadata: Metadata = {
-	title: "Mikhail Wahib - Frontend Developer",
+	title: 'Mikhail Wahib - Fullstack Developer',
 	description:
-		"Explore a web developer's portfolio featuring a collection of web projects and front-end expertise. Discover a passion for web development and software engineering in this curated showcase of creativity and code.",
+		"Explore a web developer's portfolio featuring a collection of software projects and full-stack expertise. Discover a passion for software engineering in this curated showcase of creativity and code.",
 	keywords: [
-		"web development",
-		"front-end development",
-		"software engineering",
-		"web projects",
-		"web developer portfolio",
-		"HTML",
-		"CSS",
-		"JavaScript",
-		"React",
-		"Node.js",
-		"TypeScript",
-		"web design",
+		'software engineering',
+		'web development',
+		'fullstack developer',
+		'web projects',
+		'portfolio',
+		'web design',
+		'web development',
+		'HTML',
+		'CSS',
+		'JavaScript',
+		'React',
+		'Node.js',
+		'Express',
+		'TypeScript',
+		'Next.js',
+		'Vue.js',
+		'Ruby on Rails',
+		'Ruby',
+		'python',
+		'Flask',
+		'PostgreSQL',
+		'MongoDB',
+		'Prisma',
+		'Figma',
+		'Adobe XD',
+		'Vercel',
 	],
 }
 
