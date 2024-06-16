@@ -24,7 +24,6 @@ import PopupSpan from '@/framer-components/popup-span'
 import { FaGolang } from 'react-icons/fa6'
 
 const skills = [
-	{ name: 'C++', icon: <TbBrandCpp /> },
 	{ name: 'JavaScript', icon: <BiLogoJavascript /> },
 	{ name: 'TypeScript', icon: <BiLogoTypescript /> },
 	{ name: 'Python', icon: <FaPython /> },
