@@ -1,13 +1,10 @@
-import { FaLocationDot } from "react-icons/fa6"
-import LinkBtn from "../link-btn"
-import FadeinDiv from "@/framer-components/fadein-div"
-import PopupSpan from "@/framer-components/popup-span"
-import { Spotlight } from "../ui/spotlight"
+import { FaLocationDot } from 'react-icons/fa6'
+import LinkBtn from '../link-btn'
+import PopupSpan from '@/framer-components/popup-span'
 
 const HeroSection = () => {
 	return (
 		<section className='flex items-center pt-0 w-full text-[1rem] sm:text-[1.35rem] font-bold overflow-x-hidden'>
-			<Spotlight className='hidden md:block' fill='white' />
 			<div className='flex flex-col items-start w-[65rem] mx-auto'>
 				<PopupSpan>
 					<p className='text-[1em]'>Welcome! 🙋🏽‍♂️ My name is...</p>
