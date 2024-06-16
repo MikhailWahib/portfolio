@@ -1,13 +1,12 @@
-"use client"
-import { Project } from "@/types"
-import ProjectsCard from "./projects-card"
-import { memo, useMemo, useState } from "react"
-import FadeinDiv from "@/framer-components/fadein-div"
+'use client'
+import { Project } from '@/types'
+import ProjectsCard from './projects-card'
+import { useMemo, useState } from 'react'
 
 const ProjectsSectionNav = ({ setFilter }: any) => {
-	const filters = ["all", "frontend", "backend", "fullstack", "other"]
+	const filters = ['all', 'frontend', 'backend', 'fullstack', 'other']
 	const handleCLick = (c: string) => {
-		if (c === "all") {
+		if (c === 'all') {
 			setFilter(null)
 		} else {
 			setFilter(c)

@@ -1,9 +1,10 @@
 'use client'
 
-import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
-
+import { useRef } from 'react'
 import { Project } from '@/types'
 import FadeinLi from '@/framer-components/fadein-li'
+
+import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 import {
 	BiLogoJavascript,
 	BiLogoTypescript,
@@ -14,7 +15,7 @@ import {
 	BiLogoMongodb,
 	BiLogoPostgresql,
 } from 'react-icons/bi'
-import { FaPython, FaVuejs } from 'react-icons/fa6'
+import { FaPython, FaVuejs, FaGolang } from 'react-icons/fa6'
 import {
 	SiExpress,
 	SiRubyonrails,
@@ -27,8 +28,6 @@ import {
 import { TbBrandNextjs } from 'react-icons/tb'
 import { DiRuby } from 'react-icons/di'
 import { CardContainer, CardBody, CardItem } from './ui/3d-card'
-import { useRef } from 'react'
-// import Image from "next/image"
 
 interface Props {
 	data: Project
@@ -39,6 +38,7 @@ const iconsMap: { [key: string]: any } = {
 	ts: <BiLogoTypescript />,
 	py: <FaPython />,
 	ruby: <DiRuby />,
+	go: <FaGolang />,
 	html: <AiFillHtml5 />,
 	css: <BiLogoCss3 />,
 	react: <BiLogoReact />,
