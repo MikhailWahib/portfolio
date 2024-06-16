@@ -62,14 +62,14 @@ const ProjectsCard = ({ data }: Props) => {
 	return (
 		<FadeinLi className='h-full'>
 			<CardContainer className='h-full'>
-				<CardBody className='flex flex-col bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black border-primary/[0.25] max-w-[600px] w-auto h-full rounded-xl p-6 border'>
+				<CardBody className='flex flex-col relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-primary/[0.25] max-w-[600px] w-auto h-full rounded-xl p-6 border'>
 					<CardItem translateZ='50' className='text-xl font-bold text-primary'>
 						{data.title}
 					</CardItem>
 					<CardItem
 						as='p'
 						translateZ='60'
-						className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'
+						className='text-sm max-w-sm mt-2 text-neutral-300'
 					>
 						{data.description}
 					</CardItem>
@@ -102,7 +102,7 @@ const ProjectsCard = ({ data }: Props) => {
 							<CardItem
 								translateZ={20}
 								as='button'
-								className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:text-primary'
+								className='px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-primary'
 							>
 								<a href={data.url} target='_blank'>
 									Live Demo →

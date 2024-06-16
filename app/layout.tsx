@@ -44,6 +44,8 @@ export const metadata: Metadata = {
 	],
 }
 
+console.log(process.env.NODE_ENV)
+
 export default function RootLayout({
 	children,
 }: {
@@ -56,7 +58,7 @@ export default function RootLayout({
 			>
 				<Header />
 				{children}
-				<Analytics />
+				{process.env.NODE_ENV === 'production' && <Analytics />}
 			</body>
 		</html>
 	)
