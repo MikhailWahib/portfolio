@@ -62,8 +62,8 @@ const ProjectsCard = ({ data }: Props) => {
 	const reposDivRef = useRef<HTMLDivElement>(null)
 	return (
 		<FadeinLi className='h-full'>
-			<CardContainer className='h-full'>
-				<CardBody className='flex flex-col relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-primary/[0.25] max-w-[600px] w-auto h-full rounded-xl p-6 border'>
+			<CardContainer className='h-full w-full'>
+				<CardBody className='flex flex-col relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-primary/[0.25] max-w-[600px] w-full h-full rounded-xl p-6 border'>
 					<CardItem translateZ='50' className='text-xl font-bold text-primary'>
 						{data.title}
 					</CardItem>
