@@ -7,7 +7,7 @@ import { Project } from "@/types"
 const getData = async () => {
 	try {
 		const fileContents = await fs.readFile(
-			path.join(process.cwd(), "data/projects") + "/projects.json",
+			path.join(process.cwd(), "data/projects.json"),
 			"utf8"
 		)
 		return JSON.parse(fileContents) as Project[]
