@@ -28,7 +28,7 @@
         "techstack": [
             "go",
             "react",
-            "typescript"
+            "ts"
         ],
         "tags": [
             "frontend",
@@ -95,7 +95,6 @@
         "techstack": [
             "node",
             "ts",
-            "typescript",
             "sqlite",
             "prisma",
             "jest"
