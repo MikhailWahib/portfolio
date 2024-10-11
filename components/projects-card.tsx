@@ -15,7 +15,7 @@ import {
 	BiLogoMongodb,
 	BiLogoPostgresql,
 } from 'react-icons/bi'
-import { FaPython, FaVuejs, FaGolang } from 'react-icons/fa6'
+import { FaPython, FaVuejs, FaGolang, FaRust } from 'react-icons/fa6'
 import {
 	SiExpress,
 	SiRubyonrails,
@@ -33,28 +33,29 @@ interface Props {
 	data: Project
 }
 
-const iconsMap: { [key: string]: any } = {
-	js: <BiLogoJavascript />,
-	ts: <BiLogoTypescript />,
-	py: <FaPython />,
-	ruby: <DiRuby />,
-	go: <FaGolang />,
-	html: <AiFillHtml5 />,
-	css: <BiLogoCss3 />,
-	react: <BiLogoReact />,
-	next: <TbBrandNextjs />,
-	vue: <FaVuejs />,
-	tailwind: <BiLogoTailwindCss />,
-	node: <BiLogoNodejs />,
-	express: <SiExpress />,
-	rails: <SiRubyonrails />,
-	flask: <SiFlask />,
-	mongodb: <BiLogoMongodb />,
-	postgres: <BiLogoPostgresql />,
-	redis: <SiRedis />,
-	sqlite: <SiSqlite />,
-	prisma: <SiPrisma />,
-	jest: <SiJest />,
+const iconsMap: Record<string, JSX.Element> = {
+	'js': <BiLogoJavascript />,
+	'ts': <BiLogoTypescript />,
+	'py': <FaPython />,
+	'ruby': <DiRuby />,
+	'go': <FaGolang />,
+	'rust': <FaRust />,
+	'html': <AiFillHtml5 />,
+	'css': <BiLogoCss3 />,
+	'react': <BiLogoReact />,
+	'next': <TbBrandNextjs />,
+	'vue': <FaVuejs />,
+	'tailwind': <BiLogoTailwindCss />,
+	'node': <BiLogoNodejs />,
+	'express': <SiExpress />,
+	'rails': <SiRubyonrails />,
+	'flask': <SiFlask />,
+	'mongodb': <BiLogoMongodb />,
+	'postgres': <BiLogoPostgresql />,
+	'redis': <SiRedis />,
+	'sqlite': <SiSqlite />,
+	'prisma': <SiPrisma />,
+	'jest': <SiJest />,
 }
 
 const ProjectsCard = ({ data }: Props) => {
