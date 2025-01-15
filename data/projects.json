@@ -22,6 +22,18 @@
         ]
     },
     {
+        "title": "Xpress",
+        "description": "Xpress is a minimalistic, HTTP library built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
+        "repo": "https://github.com/mikhailWahib/xpress",
+        "techstack": [
+            "rust"
+        ],
+        "tags": [
+            "backend",
+            "other"
+        ]
+    },
+    {
         "title": "Chat App",
         "description": "A fullstack real-time chat rooms app.",
         "repo": "https://github.com/mikhailWahib/chat-app",
