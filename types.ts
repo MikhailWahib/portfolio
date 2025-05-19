@@ -1,7 +1,7 @@
 type Repo = string | { frontend: string; backend: string }
 
 export interface Project {
-	id: number
+	id?: number
 	title: string
 	description: string
 	url: string

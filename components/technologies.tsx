@@ -20,7 +20,6 @@ import {
 	SiRedis,
 } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
-import PopupSpan from '@/framer-components/popup-span'
 import { FaGolang } from 'react-icons/fa6'
 
 const skills = [
@@ -42,7 +41,6 @@ const skills = [
 	{ name: 'MongoDB', icon: <BiLogoMongodb /> },
 	{ name: 'PostgreSQL', icon: <BiLogoPostgresql /> },
 	{ name: 'Redis', icon: <SiRedis /> },
-	{ name: 'Jest', icon: <SiJest /> },
 ]
 
 const Technologies = () => {
@@ -52,17 +50,15 @@ const Technologies = () => {
 				return (
 					<li
 						key={i}
-						className={` transition-transform hover:scale-105 hover:text-primary group`}
+						className='transition-all duration-300 hover:scale-105 hover:text-primary group animate-fade-in'
+						style={{ animationDelay: `${i * 100}ms` }}
 					>
-						<PopupSpan
-							delay={i * 0.1}
-							className='inline-flex flex-col items-center'
-						>
+						<div className='inline-flex flex-col items-center'>
 							{skill.icon}
-							<p className='text-primary text-xs opacity-0 group-hover:opacity-100'>
+							<p className='text-primary text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
 								{skill.name}
 							</p>
-						</PopupSpan>
+						</div>
 					</li>
 				)
 			})}

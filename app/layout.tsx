@@ -11,37 +11,7 @@ const roboto = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-	title: 'Mikhail Wahib - Fullstack Developer',
-	description:
-		"Explore a web developer's portfolio featuring a collection of software projects and full-stack expertise. Discover a passion for software engineering in this curated showcase of creativity and code.",
-	keywords: [
-		'software engineering',
-		'web development',
-		'fullstack developer',
-		'web projects',
-		'portfolio',
-		'web design',
-		'web development',
-		'HTML',
-		'CSS',
-		'JavaScript',
-		'React',
-		'Node.js',
-		'Express',
-		'TypeScript',
-		'Next.js',
-		'Vue.js',
-		'Ruby on Rails',
-		'Ruby',
-		'python',
-		'Flask',
-		'PostgreSQL',
-		'MongoDB',
-		'Prisma',
-		'Figma',
-		'Adobe XD',
-		'Vercel',
-	],
+	title: 'Mikhail Wahib - Software Developer',
 }
 
 export default function RootLayout({

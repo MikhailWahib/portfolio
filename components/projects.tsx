@@ -1,26 +1,47 @@
 'use client'
-import { Project } from '@/types'
+import { Project, Tags } from '@/types'
 import ProjectsCard from './projects-card'
 import { useMemo, useState } from 'react'
+import { cn } from '@/lib/utils'
 
-const ProjectsSectionNav = ({ setFilter }: any) => {
-	const filters = ['all', 'frontend', 'backend', 'fullstack', 'other']
-	const handleCLick = (c: string) => {
+interface ProjectsSectionNavProps {
+	setFilter: (filter: Tags | null) => void
+}
+
+const ProjectsSectionNav = ({ setFilter }: ProjectsSectionNavProps) => {
+	const [activeFilter, setActiveFilter] = useState<Tags | 'all'>('all')
+	const filters: (Tags | 'all')[] = ['all', 'frontend', 'backend', 'fullstack', 'other']
+
+	const handleClick = (c: Tags | 'all') => {
+		setActiveFilter(c)
 		if (c === 'all') {
 			setFilter(null)
 		} else {
 			setFilter(c)
 		}
 	}
+
 	return (
 		<nav className='relative top-8 flex justify-center gap-2 sm:gap-5'>
 			{filters.map((f) => (
 				<button
 					key={f}
-					className='text-primary text-sm sm:text-lg font-bold capitalize hover:underline'
-					onClick={() => handleCLick(f)}
+					onClick={() => handleClick(f)}
+					className={cn(
+						"relative px-4 py-2 text-sm sm:text-base font-medium transition-all duration-300",
+						"hover:text-primary",
+						activeFilter === f ? "text-primary" : "text-white/60",
+						"group"
+					)}
 				>
-					{f}
+					<span className="relative z-10 capitalize">{f}</span>
+					{activeFilter === f && (
+						<>
+							<span className="absolute inset-0 bg-primary/10 rounded-lg transition-all duration-300" />
+							<span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary transform origin-left transition-transform duration-300" />
+						</>
+					)}
+					<span className="absolute inset-0 bg-primary/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 				</button>
 			))}
 		</nav>
@@ -31,8 +52,8 @@ interface Props {
 	projects: Project[] | undefined
 }
 
-const projects = ({ projects }: Props) => {
-	const [filter, setFilter] = useState()
+const Projects = ({ projects }: Props) => {
+	const [filter, setFilter] = useState<Tags | null>(null)
 
 	const filteredProjects = useMemo(() => {
 		if (!projects) return []
@@ -52,4 +73,4 @@ const projects = ({ projects }: Props) => {
 	)
 }
 
-export default projects
+export default Projects

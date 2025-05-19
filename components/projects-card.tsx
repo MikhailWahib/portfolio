@@ -2,7 +2,6 @@
 
 import { useRef } from 'react'
 import { Project } from '@/types'
-import FadeinLi from '@/framer-components/fadein-li'
 
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 import {
@@ -61,9 +60,9 @@ const iconsMap: Record<string, JSX.Element> = {
 const ProjectsCard = ({ data }: Props) => {
 	const reposDivRef = useRef<HTMLDivElement>(null)
 	return (
-		<FadeinLi className='h-full'>
+		<li className='h-full animate-fade-in'>
 			<CardContainer className='h-full w-full'>
-				<CardBody className='flex flex-col relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-primary/[0.25] max-w-[600px] w-full h-full rounded-xl p-6 border'>
+				<CardBody className='flex flex-col relative group/card hover:shadow-glow bg-background border-primary/[0.25] max-w-[600px] w-full h-full rounded-xl p-6 border transition-all duration-300'>
 					<CardItem translateZ='50' className='text-xl font-bold text-primary'>
 						{data.title}
 					</CardItem>
@@ -95,7 +94,7 @@ const ProjectsCard = ({ data }: Props) => {
 						className='flex my-10 text-xl gap-x-2 text-primary'
 					>
 						{data.techstack.map((tech, i) => {
-							return <span key={tech + i}>{iconsMap[tech]}</span>
+							return <span key={tech + i} className='transition-transform hover:scale-110'>{iconsMap[tech]}</span>
 						})}
 					</CardItem>
 					<div className='flex justify-between items-center mt-auto'>
@@ -103,7 +102,7 @@ const ProjectsCard = ({ data }: Props) => {
 							<CardItem
 								translateZ={20}
 								as='button'
-								className='px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-primary'
+								className='px-4 py-2 rounded-xl text-xs font-normal text-white hover:text-primary transition-colors duration-300'
 							>
 								<a href={data.url} target='_blank'>
 									Live Demo →
@@ -119,14 +118,14 @@ const ProjectsCard = ({ data }: Props) => {
 								<a
 									href={data.repo}
 									target='_blank'
-									className='transition hover:text-primary'
+									className='transition-colors duration-300 hover:text-primary'
 								>
 									<AiFillGithub />
 								</a>
 							) : (
 								<div className='relative'>
 									<button
-										className='hover:text-primary transition'
+										className='hover:text-primary transition-colors duration-300'
 										onClick={() => {
 											reposDivRef.current?.classList.toggle('hidden')
 											reposDivRef.current?.classList.toggle('flex')
@@ -135,20 +134,20 @@ const ProjectsCard = ({ data }: Props) => {
 										<AiFillGithub />
 									</button>
 									<div
-										className='hidden absolute right-10 top-2 gap-2 text-xs'
+										className='hidden absolute right-10 top-2 gap-2 text-xs bg-black/80 backdrop-blur-sm p-2 rounded-lg border border-primary/20'
 										ref={reposDivRef}
 									>
 										<a
 											href={data.repo.frontend}
 											target='_blank'
-											className='hover:text-primary transition'
+											className='hover:text-primary transition-colors duration-300'
 										>
 											Frontend
 										</a>
 										<a
 											href={data.repo.backend}
 											target='_blank'
-											className='hover:text-primary transition'
+											className='hover:text-primary transition-colors duration-300'
 										>
 											Backend
 										</a>
@@ -159,7 +158,7 @@ const ProjectsCard = ({ data }: Props) => {
 					</div>
 				</CardBody>
 			</CardContainer>
-		</FadeinLi>
+		</li>
 	)
 }
 
