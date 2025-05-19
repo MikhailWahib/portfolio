@@ -1,8 +1,7 @@
 [
     {
         "title": "Ra Programming Language",
-        "description": "A simple interpreted dynamically-typed programming language.",
-        "repo": "https://github.com/mikhailWahib/Ra",
+        "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.", "repo": "https://github.com/mikhailWahib/Ra",
         "techstack": [
             "go"
         ],
@@ -11,8 +10,19 @@
         ]
     },
     {
+        "title": "Xpress",
+        "description": "Xpress is a minimalistic, HTTP framework built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
+        "repo": "https://github.com/mikhailWahib/xpress",
+        "techstack": [
+            "rust"
+        ],
+        "tags": [
+            "other"
+        ]
+    },
+    {
         "title": "Redis Clone",
-        "description": "This project is a simplified clone of Redis, supporting basic commands and using the Redis Serialization Protocol (RESP) for communication and Data persistence using Append Only File (AOF).",
+        "description": "a Redis-compatible in-memory data store with RESP protocol support. Implemented AOF persistence for durability and a concurrent architecture to handle high-throughput workloads efficiently. ",
         "repo": "https://github.com/mikhailWahib/redis-clone",
         "techstack": [
             "go"
