@@ -22,7 +22,7 @@ const ProjectsSectionNav = ({ setFilter }: ProjectsSectionNavProps) => {
 	}
 
 	return (
-		<nav className='relative top-8 flex justify-center gap-2 sm:gap-5'>
+		<nav className='relative top-8 flex justify-center flex-wrap gap-2 sm:gap-5'>
 			{filters.map((f) => (
 				<button
 					key={f}
