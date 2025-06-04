@@ -12,6 +12,7 @@ const roboto = Roboto_Mono({
 
 export const metadata: Metadata = {
 	title: 'Mikhail Wahib - Software Developer',
+	description: "I'm Mikhail, a software developer with interests in backend and fullstack development. I love learning new things and exploring different technologies. Let's connect and build something remarkable together."
 }
 
 export default function RootLayout({
