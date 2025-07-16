@@ -1,7 +1,19 @@
 [
     {
+        "title": "GravelDB",
+        "description": "a performant LSM-tree-based key-value store with skiplist memtable, WAL, SSTables, and size-tiered compaction. Fully tested (unit + integration) with CI via GitHub Actions.",
+        "repo": "https://github.com/mikhailWahib/graveldb",
+        "techstack": [
+            "go"
+        ],
+        "tags": [
+            "other"
+        ]
+    },
+    {
         "title": "Ra Programming Language",
-        "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.", "repo": "https://github.com/mikhailWahib/Ra",
+        "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.",
+        "repo": "https://github.com/mikhailWahib/Ra",
         "techstack": [
             "go"
         ],
