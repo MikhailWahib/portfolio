@@ -1,5 +1,5 @@
-import { FaLocationDot } from 'react-icons/fa6'
-import { AiFillGithub } from 'react-icons/ai'
+import { FaLinkedin, FaLocationDot } from 'react-icons/fa6'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import LinkBtn from '@/components/link-btn'
 import SectionHeading from '@/components/section-heading'
 import Technologies from '@/components/technologies'
@@ -127,16 +127,28 @@ export default async function Home() {
 									href='mailto:mikhailwahib20@gmail.com'
 									variant="primary"
 								/>
-								<a
-									href='https://github.com/MikhailWahib'
-									target='_blank'
-									className={cn(
-										"text-4xl text-white/70 hover:text-primary transition-all duration-300"
-									)}
-									aria-label='GitHub repository'
-								>
-									<AiFillGithub />
-								</a>
+								<div className="flex space-x-4">
+									<a
+										href='https://github.com/MikhailWahib'
+										target='_blank'
+										className={cn(
+											"text-4xl text-white/70 hover:text-primary transition-all duration-300"
+										)}
+										aria-label='GitHub repository'
+									>
+										<AiFillGithub />
+									</a>
+									<a
+										href='https://www.linkedin.com/in/mikhail-wahib/'
+										target='_blank'
+										className={cn(
+											"text-4xl text-white/70 hover:text-primary transition-all duration-300"
+										)}
+										aria-label='LinkedIn profile'
+									>
+										<FaLinkedin />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
