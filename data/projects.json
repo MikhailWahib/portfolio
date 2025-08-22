@@ -1,262 +1,151 @@
 [
-    {
-        "title": "GravelDB",
-        "description": "a performant LSM-tree-based key-value store with skiplist memtable, WAL, SSTables, and size-tiered compaction. Fully tested (unit + integration) with CI via GitHub Actions.",
-        "repo": "https://github.com/mikhailWahib/graveldb",
-        "techstack": [
-            "go"
-        ],
-        "tags": [
-            "other"
-        ]
+  {
+    "title": "GravelDB",
+    "description": "a performant LSM-tree-based key-value store with skiplist memtable, WAL, SSTables, and size-tiered compaction. Fully tested (unit + integration) with CI via GitHub Actions.",
+    "repo": "https://github.com/mikhailWahib/graveldb",
+    "techstack": ["go"],
+    "tags": ["other"]
+  },
+  {
+    "title": "Ra Programming Language",
+    "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.",
+    "repo": "https://github.com/mikhailWahib/Ra",
+    "techstack": ["go"],
+    "tags": ["other"]
+  },
+  {
+    "title": "Xpress",
+    "description": "Xpress is a minimalistic, HTTP framework built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
+    "repo": "https://github.com/mikhailWahib/xpress",
+    "techstack": ["rust"],
+    "tags": ["other"]
+  },
+  {
+    "title": "Redis Clone",
+    "description": "a Redis-compatible in-memory data store with RESP protocol support. Implemented AOF persistence for durability and a concurrent architecture to handle high-throughput workloads efficiently. ",
+    "repo": "https://github.com/mikhailWahib/redis-clone",
+    "techstack": ["go"],
+    "tags": ["other"]
+  },
+  {
+    "title": "Chat App",
+    "description": "A fullstack real-time chat rooms app.",
+    "repo": "https://github.com/mikhailWahib/chat-app",
+    "techstack": ["go", "react", "ts"],
+    "tags": ["frontend", "backend", "fullstack"]
+  },
+  {
+    "title": "Movibes",
+    "description": "Movibes is your ultimate destination for exploring a world of movies and TV shows. Dive into a cinematic adventure, where you can discover a wide range of films, watch trailers, explore cast and crew information, and much more.",
+    "url": "https://movibes-mw.vercel.app/",
+    "repo": "https://github.com/MikhailWahib/Movibes",
+    "techstack": ["react", "next", "ts", "tailwind"],
+    "tags": ["fullstack", "frontend"]
+  },
+  {
+    "title": "FullStack URL Shortener",
+    "description": "An URL shortener application created with Vuejs, Node.js, Express, TypeScript, and PostgreSQL. The application allows users to shorten long URLs and track their click-through rates.",
+    "url": "https://url-shortener-mw.vercel.app/",
+    "repo": {
+      "frontend": "https://github.com/MikhailWahib/url-shortener-frontend",
+      "backend": "https://github.com/MikhailWahib/url-shortener-backend"
     },
-    {
-        "title": "Ra Programming Language",
-        "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.",
-        "repo": "https://github.com/mikhailWahib/Ra",
-        "techstack": [
-            "go"
-        ],
-        "tags": [
-            "other"
-        ]
-    },
-    {
-        "title": "Xpress",
-        "description": "Xpress is a minimalistic, HTTP framework built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
-        "repo": "https://github.com/mikhailWahib/xpress",
-        "techstack": [
-            "rust"
-        ],
-        "tags": [
-            "other"
-        ]
-    },
-    {
-        "title": "Redis Clone",
-        "description": "a Redis-compatible in-memory data store with RESP protocol support. Implemented AOF persistence for durability and a concurrent architecture to handle high-throughput workloads efficiently. ",
-        "repo": "https://github.com/mikhailWahib/redis-clone",
-        "techstack": [
-            "go"
-        ],
-        "tags": [
-            "other"
-        ]
-    },
-    {
-        "title": "Chat App",
-        "description": "A fullstack real-time chat rooms app.",
-        "repo": "https://github.com/mikhailWahib/chat-app",
-        "techstack": [
-            "go",
-            "react",
-            "ts"
-        ],
-        "tags": [
-            "frontend",
-            "backend",
-            "fullstack"
-        ]
-    },
-    {
-        "title": "Movibes",
-        "description": "Movibes is your ultimate destination for exploring a world of movies and TV shows. Dive into a cinematic adventure, where you can discover a wide range of films, watch trailers, explore cast and crew information, and much more.",
-        "url": "https://movibes-mw.vercel.app/",
-        "repo": "https://github.com/MikhailWahib/Movibes",
-        "techstack": [
-            "react",
-            "next",
-            "ts",
-            "tailwind"
-        ],
-        "tags": [
-            "fullstack",
-            "frontend"
-        ]
-    },
-    {
-        "title": "FullStack URL Shortener",
-        "description": "An URL shortener application created with Vuejs, Node.js, Express, TypeScript, and PostgreSQL. The application allows users to shorten long URLs and track their click-through rates.",
-        "url": "https://url-shortener-mw.vercel.app/",
-        "repo": {
-            "frontend": "https://github.com/MikhailWahib/url-shortener-frontend",
-            "backend": "https://github.com/MikhailWahib/url-shortener-backend"
-        },
-        "techstack": [
-            "vue",
-            "node",
-            "express",
-            "ts",
-            "postgres",
-            "jest"
-        ],
-        "tags": [
-            "fullstack",
-            "backend"
-        ]
-    },
-    {
-        "title": "Football Fixtures API",
-        "description": "Developed a RESTful API using Python, Flask, and Redis. The API allows users to fetch live, upcoming, and past Football fixtures.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/football-fixtures-api",
-        "techstack": [
-            "py",
-            "flask",
-            "redis"
-        ],
-        "tags": [
-            "backend"
-        ]
-    },
-    {
-        "title": "Vending Machine API",
-        "description": "A vending machine API built using Nodejs, TypeScript and sqlite3 with prisma ORM.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/vending-machine-api",
-        "techstack": [
-            "node",
-            "ts",
-            "sqlite",
-            "prisma",
-            "jest"
-        ],
-        "tags": [
-            "backend"
-        ]
-    },
-    {
-        "title": "Minigrep",
-        "description": "A basic grep clone created as a learning project for Rust. ",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/minigrep",
-        "techstack": [
-            "rust"
-        ],
-        "tags": [
-            "other"
-        ]
-    },
-    {
-        "title": "FullStack Tasks Manager Website",
-        "description": "A Full-Stack web application built with Ruby on Rails. The application allows users to create, update, and delete tasks, with user authentication.",
-        "url": "https://rails-tasks-management.onrender.com/",
-        "repo": "https://github.com/MikhailWahib/rails-tasks-management",
-        "techstack": [
-            "ruby",
-            "rails"
-        ],
-        "tags": [
-            "fullstack",
-            "backend"
-        ]
-    },
-    {
-        "title": "Space Tourism",
-        "description": "A Single Page Application (SPA) created with React and Tailwind CSS for exploring space tourism destinations. Enjoy an immersive and user-friendly experience as you navigate the cosmos.",
-        "url": "https://space-tourism-mw.netlify.app",
-        "repo": "https://github.com/MikhailWahib/space-tourism-website",
-        "techstack": [
-            "react",
-            "js",
-            "tailwind"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "URL Shortener CLI",
-        "description": "Developed a CLI application for URL shortening using Python, The CLI application uses the URL Shortener API.",
-        "url": "",
-        "repo": "https://github.com/MikhailWahib/URL-Shortener-cli",
-        "techstack": [
-            "py"
-        ],
-        "tags": [
-            "other"
-        ]
-    },
-    {
-        "title": "World Countries",
-        "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
-        "url": "https://world-countries-mw.vercel.app",
-        "repo": "https://github.com/MikhailWahib/world-countries",
-        "techstack": [
-            "react",
-            "next",
-            "ts",
-            "tailwind"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "Blogr Landing Page",
-        "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
-        "url": "https://blogr-landing-page-mw.netlify.app/",
-        "repo": "https://github.com/MikhailWahib/Blogr-Landing-Page",
-        "techstack": [
-            "html",
-            "css",
-            "js"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "Easybank Landing page",
-        "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
-        "url": "https://easybank-landing-page-mw.netlify.app/",
-        "repo": "https://github.com/MikhailWahib/easybank-landing-page/",
-        "techstack": [
-            "html",
-            "css",
-            "js"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "Dual sense product page",
-        "description": "An E-commerce product page built with React with responsive layout and animations",
-        "url": "https://dual-sense-product-page.vercel.app/",
-        "repo": "https://github.com/MikhailWahib/ecommerce-product-page",
-        "techstack": [
-            "react",
-            "ts",
-            "tailwind"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "Sneakers product page",
-        "description": "An E-commerce product page built with React with responsive layout ",
-        "url": "https://sneakers-product-mw.netlify.app/",
-        "repo": "https://github.com/MikhailWahib/e-commerce-product-page",
-        "techstack": [
-            "react",
-            "js",
-            "css"
-        ],
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "title": "Hack Assembler",
-        "description": "The Hack assembler is a simple and powerful tool that helps you to assemble your programs written in Hack Assembly language.",
-        "repo": "https://github.com/MikhailWahib/Hack-Assembler",
-        "techstack": [
-            "py"
-        ],
-        "tags": [
-            "other"
-        ]
-    }
+    "techstack": ["vue", "node", "express", "ts", "postgres", "jest"],
+    "tags": ["fullstack", "backend"]
+  },
+  {
+    "title": "Football Scores API",
+    "description": "Developed a RESTful API using Python, Flask, and Redis. The API allows users to fetch live, upcoming, and past Football Scores.",
+    "url": "",
+    "repo": "https://github.com/MikhailWahib/football-scores-api",
+    "techstack": ["py", "flask", "redis"],
+    "tags": ["backend"]
+  },
+  {
+    "title": "Vending Machine API",
+    "description": "A vending machine API built using Nodejs, TypeScript and sqlite3 with prisma ORM.",
+    "url": "",
+    "repo": "https://github.com/MikhailWahib/vending-machine-api",
+    "techstack": ["node", "ts", "sqlite", "prisma", "jest"],
+    "tags": ["backend"]
+  },
+  {
+    "title": "Minigrep",
+    "description": "A basic grep clone created as a learning project for Rust. ",
+    "url": "",
+    "repo": "https://github.com/MikhailWahib/minigrep",
+    "techstack": ["rust"],
+    "tags": ["other"]
+  },
+  {
+    "title": "FullStack Tasks Manager Website",
+    "description": "A Full-Stack web application built with Ruby on Rails. The application allows users to create, update, and delete tasks, with user authentication.",
+    "url": "https://rails-tasks-management.onrender.com/",
+    "repo": "https://github.com/MikhailWahib/rails-tasks-management",
+    "techstack": ["ruby", "rails"],
+    "tags": ["fullstack", "backend"]
+  },
+  {
+    "title": "Space Tourism",
+    "description": "A Single Page Application (SPA) created with React and Tailwind CSS for exploring space tourism destinations. Enjoy an immersive and user-friendly experience as you navigate the cosmos.",
+    "url": "https://space-tourism-mw.netlify.app",
+    "repo": "https://github.com/MikhailWahib/space-tourism-website",
+    "techstack": ["react", "js", "tailwind"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "URL Shortener CLI",
+    "description": "Developed a CLI application for URL shortening using Python, The CLI application uses the URL Shortener API.",
+    "url": "",
+    "repo": "https://github.com/MikhailWahib/URL-Shortener-cli",
+    "techstack": ["py"],
+    "tags": ["other"]
+  },
+  {
+    "title": "World Countries",
+    "description": "World Countries Explorer is a simple web application that allows users to explore information about countries from all around the world. The application provides a user-friendly interface with several features for easy navigation and data retrieval.",
+    "url": "https://world-countries-mw.vercel.app",
+    "repo": "https://github.com/MikhailWahib/world-countries",
+    "techstack": ["react", "next", "ts", "tailwind"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "Blogr Landing Page",
+    "description": "Developed a responsive landing page with captivating animations using HTML, CSS, and JavaScript. The inclusion of responsive design ensures an optimal user experience across various devices.",
+    "url": "https://blogr-landing-page-mw.netlify.app/",
+    "repo": "https://github.com/MikhailWahib/Blogr-Landing-Page",
+    "techstack": ["html", "css", "js"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "Easybank Landing page",
+    "description": "A responsive landing page built with HTML, CSS, and JavaScript. The focus of this project is on delivering an elegant and user-friendly layout that adapts seamlessly to different screen sizes and devices.",
+    "url": "https://easybank-landing-page-mw.netlify.app/",
+    "repo": "https://github.com/MikhailWahib/easybank-landing-page/",
+    "techstack": ["html", "css", "js"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "Dual sense product page",
+    "description": "An E-commerce product page built with React with responsive layout and animations",
+    "url": "https://dual-sense-product-page.vercel.app/",
+    "repo": "https://github.com/MikhailWahib/ecommerce-product-page",
+    "techstack": ["react", "ts", "tailwind"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "Sneakers product page",
+    "description": "An E-commerce product page built with React with responsive layout ",
+    "url": "https://sneakers-product-mw.netlify.app/",
+    "repo": "https://github.com/MikhailWahib/e-commerce-product-page",
+    "techstack": ["react", "js", "css"],
+    "tags": ["frontend"]
+  },
+  {
+    "title": "Hack Assembler",
+    "description": "The Hack assembler is a simple and powerful tool that helps you to assemble your programs written in Hack Assembly language.",
+    "repo": "https://github.com/MikhailWahib/Hack-Assembler",
+    "techstack": ["py"],
+    "tags": ["other"]
+  }
 ]
