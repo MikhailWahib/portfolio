@@ -11,4 +11,3 @@ export interface Project {
 	imgPath?: string
 }
 
-export type Tags = "frontend" | "backend" | "fullstack" | "other"

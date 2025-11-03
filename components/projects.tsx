@@ -1,18 +1,15 @@
 'use client'
-import { Project, Tags } from '@/types'
+import { Project } from '@/types'
 import ProjectsCard from './projects-card'
 import { useMemo, useState } from 'react'
 import { cn } from '@/lib/utils'
 
-interface ProjectsSectionNavProps {
-	setFilter: (filter: Tags | null) => void
-}
 
-const ProjectsSectionNav = ({ setFilter }: ProjectsSectionNavProps) => {
-	const [activeFilter, setActiveFilter] = useState<Tags | 'all'>('all')
-	const filters: (Tags | 'all')[] = ['all', 'frontend', 'backend', 'fullstack', 'other']
+const ProjectsSectionNav = ({ setFilter }: { setFilter: (f: string | null) => void }) => {
+	const [activeFilter, setActiveFilter] = useState<string>('all')
+	const filters: string[] = ['all', 'frontend', 'backend', 'fullstack', 'systems programming']
 
-	const handleClick = (c: Tags | 'all') => {
+	const handleClick = (c: string) => {
 		setActiveFilter(c)
 		if (c === 'all') {
 			setFilter(null)
@@ -53,7 +50,7 @@ interface Props {
 }
 
 const Projects = ({ projects }: Props) => {
-	const [filter, setFilter] = useState<Tags | null>(null)
+	const [filter, setFilter] = useState<string | null>(null)
 
 	const filteredProjects = useMemo(() => {
 		if (!projects) return []
