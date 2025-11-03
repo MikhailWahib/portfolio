@@ -1,21 +1,24 @@
 'use client'
+
 import { Project } from '@/types'
 import ProjectsCard from './projects-card'
-import { useMemo, useState } from 'react'
 import { cn } from '@/lib/utils'
+import { useSearchParams, useRouter } from 'next/navigation'
 
+const filters = ['all', 'frontend', 'backend', 'fullstack', 'systems programming'] as const
 
-const ProjectsSectionNav = ({ setFilter }: { setFilter: (f: string | null) => void }) => {
-	const [activeFilter, setActiveFilter] = useState<string>('all')
-	const filters: string[] = ['all', 'frontend', 'backend', 'fullstack', 'systems programming']
+const ProjectsSectionNav = () => {
+	const router = useRouter()
+	const searchParams = useSearchParams()
+	const activeFilter = searchParams.get('filter') || 'all'
 
-	const handleClick = (c: string) => {
-		setActiveFilter(c)
-		if (c === 'all') {
-			setFilter(null)
-		} else {
-			setFilter(c)
-		}
+	const handleClick = (f: string) => {
+		const params = new URLSearchParams(searchParams.toString())
+
+		if (f === 'all') params.delete('filter')
+		else params.set('filter', f)
+
+		router.replace(`?${params.toString()}`, { scroll: false })
 	}
 
 	return (
@@ -46,21 +49,18 @@ const ProjectsSectionNav = ({ setFilter }: { setFilter: (f: string | null) => vo
 }
 
 interface Props {
-	projects: Project[] | undefined
+	projects: Project[]
 }
 
 const Projects = ({ projects }: Props) => {
-	const [filter, setFilter] = useState<string | null>(null)
+	const searchParams = useSearchParams()
+	const filter = searchParams.get('filter')
 
-	const filteredProjects = useMemo(() => {
-		if (!projects) return []
-		if (!filter) return projects
-		return projects.filter((project) => project.tags.includes(filter))
-	}, [projects, filter])
+	const filteredProjects = filter ? projects.filter((p) => p.tags.includes(filter)) : projects
 
 	return (
 		<div className='max-w-[1800px] mx-auto'>
-			<ProjectsSectionNav setFilter={setFilter} />
+			<ProjectsSectionNav />
 			<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(18rem,1fr)] place-content-center mt-16 gap-10'>
 				{filteredProjects?.map((project, i) => (
 					<ProjectsCard key={i} data={project} />

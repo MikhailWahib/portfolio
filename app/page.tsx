@@ -8,6 +8,7 @@ import fs from 'fs/promises'
 import path from 'path'
 import { Project } from '@/types'
 import { cn } from '@/lib/utils'
+import { Suspense } from 'react'
 
 const getData = async () => {
 	try {
@@ -103,7 +104,9 @@ export default async function Home() {
 				<div className='container mx-auto px-4 md:px-8 relative'>
 					<SectionHeading title='Projects' />
 					<div className='mt-16'>
-						<Projects projects={projects} />
+						<Suspense>
+							<Projects projects={projects || []} />
+						</Suspense>
 					</div>
 				</div>
 			</section>
