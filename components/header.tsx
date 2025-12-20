@@ -26,15 +26,15 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full h-[70px] flex justify-between items-center p-4 md:py-4 md:px-20 bg-background z-50">
       <div>
-        <a href="/#" className="text-2xl font-bold">
+        <a href="/#" className="relative text-2xl font-bold">
+          <img src="/imgs/xmas-hat.svg" className="absolute bottom-3 -left-[1.25px] -rotate-12" />
           <span className="text-primary">M</span>ikhail{" "}
           <span className="text-primary">W</span>ahib
         </a>
       </div>
       <nav
-        className={`flex flex-col md:flex-row justify-center items-center absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-background md:bg-transparent transition-all ${
-          open ? "max-h-screen" : "max-h-0"
-        } md:max-h-full z-40`}
+        className={`flex flex-col md:flex-row justify-center items-center absolute md:relative top-16 md:top-0 left-0 w-full md:w-fit overflow-hidden bg-background md:bg-transparent transition-all ${open ? "max-h-screen" : "max-h-0"
+          } md:max-h-full z-40`}
       >
         <ul className="flex flex-col md:flex-row items-center md:items-start py-8 px-4 md:py-0 md:px-0 gap-4">
           {links.map((link) => (

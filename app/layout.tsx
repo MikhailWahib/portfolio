@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Roboto_Mono } from 'next/font/google'
 
 import { Analytics } from '@vercel/analytics/react'
+import Snowfall from '@/components/snowfall'
 
 const roboto = Roboto_Mono({
 	subsets: ['latin'],
@@ -12,7 +13,7 @@ const roboto = Roboto_Mono({
 
 export const metadata: Metadata = {
 	title: 'Mikhail Wahib - Software Developer',
-	description: "I'm Mikhail, a software developer with interests in backend and fullstack development. I love learning new things and exploring different technologies. Let's connect and build something remarkable together."
+	description: "I'm Mikhail, a software developer with interests in backend and fullstack development. I love learning new things and exploring different technologies."
 }
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
 			<body
 				className={`${roboto.className} bg-background text-white overflow-x-hidden`}
 			>
+				<Snowfall />
 				<Header />
 				{children}
 				{process.env.NODE_ENV === 'production' && <Analytics />}
