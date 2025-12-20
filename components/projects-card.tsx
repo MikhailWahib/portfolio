@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { type JSX, useRef } from 'react'
 import { Project } from '@/types'
 
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
