@@ -3,24 +3,24 @@
 import { useEffect } from "react";
 import LinkBtn from "@/components/link-btn";
 
-const Page = () => {
-  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || process.env.RESUME_URL || "";
+export default function ResumePage() {
+  const resumeUrl =
+    process.env.NEXT_PUBLIC_RESUME_URL || process.env.RESUME_URL || "";
 
   useEffect(() => {
-    console.log(resumeUrl)
     if (resumeUrl) {
       window.location.replace(resumeUrl);
     }
   }, [resumeUrl]);
 
-
-  if (!resumeUrl)
+  if (!resumeUrl) {
     return (
       <div className="flex justify-center flex-col gap-5 h-screen items-center text-3xl text-primary">
         <p className="block">Something Went Wrong</p>
         <LinkBtn href="/" title="Go Back" />
       </div>
     );
+  }
 
   return (
     <div className="flex justify-center flex-col gap-5 h-screen items-center text-3xl text-primary">
@@ -36,6 +36,4 @@ const Page = () => {
       <LinkBtn href="/" title="Go Back" />
     </div>
   );
-};
-
-export default Page;
+}

@@ -4,7 +4,7 @@
     "description": "a performant LSM-tree-based key-value store with skiplist memtable, WAL, SSTables, and size-tiered compaction. Fully tested (unit + integration) with CI via GitHub Actions.",
     "repo": "https://github.com/mikhailWahib/graveldb",
     "techstack": [
-      "go"
+      "Go"
     ],
     "tags": [
       "systems programming"
@@ -15,7 +15,7 @@
     "description": "An interpreted dynamically typed programming language using Golang, featuring a lexer, top‑down parser, and tree‑walking interpreter.",
     "repo": "https://github.com/mikhailWahib/Ra",
     "techstack": [
-      "go"
+      "Go"
     ],
     "tags": [
       "systems programming"
@@ -26,7 +26,7 @@
     "description": "Xpress is a minimalistic, HTTP framework built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
     "repo": "https://github.com/mikhailWahib/xpress",
     "techstack": [
-      "rust"
+      "Rust"
     ],
     "tags": [
       "systems programming"
@@ -37,7 +37,7 @@
     "description": "a Redis-compatible in-memory data store with RESP protocol support. Implemented AOF persistence for durability and a concurrent architecture to handle high-throughput workloads efficiently. ",
     "repo": "https://github.com/mikhailWahib/redis-clone",
     "techstack": [
-      "go"
+      "Go"
     ],
     "tags": [
       "systems programming"
@@ -49,12 +49,12 @@
     "url": "https://url-shortener-mw.vercel.app/",
     "repo": "https://github.com/MikhailWahib/url-shortener-backend",
     "techstack": [
-      "vue",
-      "node",
-      "express",
-      "ts",
-      "postgres",
-      "jest"
+      "Vue",
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "PostgreSQL",
+      "Jest"
     ],
     "tags": [
       "fullstack",
@@ -66,9 +66,9 @@
     "description": "A fullstack real-time chat rooms app.",
     "repo": "https://github.com/mikhailWahib/chat-app",
     "techstack": [
-      "go",
-      "react",
-      "ts"
+      "Go",
+      "React",
+      "TypeScript"
     ],
     "tags": [
       "frontend",
@@ -82,11 +82,11 @@
     "url": "",
     "repo": "https://github.com/MikhailWahib/vending-machine-api",
     "techstack": [
-      "node",
-      "ts",
-      "sqlite",
-      "prisma",
-      "jest"
+      "Node.js",
+      "TypeScript",
+      "SQLite",
+      "Prisma",
+      "Jest"
     ],
     "tags": [
       "backend"
@@ -98,10 +98,10 @@
     "url": "https://movibes-mw.vercel.app/",
     "repo": "https://github.com/MikhailWahib/Movibes",
     "techstack": [
-      "react",
-      "next",
-      "ts",
-      "tailwind"
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
     ],
     "tags": [
       "fullstack",
@@ -114,7 +114,7 @@
     "url": "",
     "repo": "https://github.com/MikhailWahib/minigrep",
     "techstack": [
-      "rust"
+      "Rust"
     ],
     "tags": [
       "systems programming"
@@ -126,9 +126,9 @@
     "url": "",
     "repo": "https://github.com/MikhailWahib/football-scores-api",
     "techstack": [
-      "py",
-      "flask",
-      "redis"
+      "Python",
+      "Flask",
+      "Redis"
     ],
     "tags": [
       "backend"
@@ -140,8 +140,8 @@
     "url": "https://rails-tasks-management.onrender.com/",
     "repo": "https://github.com/MikhailWahib/rails-tasks-management",
     "techstack": [
-      "ruby",
-      "rails"
+      "Ruby",
+      "Ruby on Rails"
     ],
     "tags": [
       "fullstack",
@@ -154,9 +154,9 @@
     "url": "https://space-tourism-mw.netlify.app",
     "repo": "https://github.com/MikhailWahib/space-tourism-website",
     "techstack": [
-      "react",
-      "js",
-      "tailwind"
+      "React",
+      "JavaScript",
+      "Tailwind CSS"
     ],
     "tags": [
       "frontend"
@@ -168,9 +168,9 @@
     "url": "https://dual-sense-product-page.vercel.app/",
     "repo": "https://github.com/MikhailWahib/ecommerce-product-page",
     "techstack": [
-      "react",
-      "ts",
-      "tailwind"
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
     ],
     "tags": [
       "frontend"
@@ -182,9 +182,9 @@
     "url": "https://blogr-landing-page-mw.netlify.app/",
     "repo": "https://github.com/MikhailWahib/Blogr-Landing-Page",
     "techstack": [
-      "html",
-      "css",
-      "js"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
     "tags": [
       "frontend"
@@ -196,9 +196,9 @@
     "url": "https://easybank-landing-page-mw.netlify.app/",
     "repo": "https://github.com/MikhailWahib/easybank-landing-page/",
     "techstack": [
-      "html",
-      "css",
-      "js"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
     "tags": [
       "frontend"
@@ -210,9 +210,9 @@
     "url": "https://sneakers-product-mw.netlify.app/",
     "repo": "https://github.com/MikhailWahib/e-commerce-product-page",
     "techstack": [
-      "react",
-      "js",
-      "css"
+      "React",
+      "JavaScript",
+      "CSS"
     ],
     "tags": [
       "frontend"
