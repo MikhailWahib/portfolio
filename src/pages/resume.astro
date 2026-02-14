@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const resumeUrl = import.meta.env.PUBLIC_RESUME_URL || "";
+---
+
+<BaseLayout title="Resume | Mikhail Wahib">
+  {
+    resumeUrl ? (
+      <div class="flex justify-center flex-col gap-5 h-screen items-center text-3xl text-primary">
+        <p class="block">Redirecting to resume...</p>
+        <a
+          href={resumeUrl}
+          class="underline text-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Click here if not redirected
+        </a>
+        <a
+          href="/"
+          class="block w-fit rounded text-base font-normal transition-all py-3 px-5 bg-primary text-black hover:bg-primary/80 border border-black"
+        >
+          Go Back
+        </a>
+      </div>
+    ) : (
+      <div class="flex justify-center flex-col gap-5 h-screen items-center text-3xl text-primary">
+        <p class="block">Something Went Wrong</p>
+        <a
+          href="/"
+          class="block w-fit rounded text-base font-normal transition-all py-3 px-5 bg-primary text-black hover:bg-primary/80 border border-black"
+        >
+          Go Back
+        </a>
+      </div>
+    )
+  }
+</BaseLayout>
+
+{
+  resumeUrl && (
+    <script is:inline set:html={`setTimeout(() => window.location.replace(${JSON.stringify(resumeUrl)}), 700);`}></script>
+  )
+}

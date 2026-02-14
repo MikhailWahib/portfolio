@@ -1,0 +1,282 @@
+---
+import { FILTERS, TABS } from '../lib/constants'
+import type { Project } from '../lib/projects'
+import { getRepoUrl } from '../lib/projects'
+
+interface Props {
+  projects: Project[]
+}
+
+const { projects }: Props = Astro.props
+---
+
+<nav class='flex justify-center gap-1 border-b border-white/10 px-4 pt-4'>
+  {
+    TABS.map((tab) => (
+      <a
+        href={`?tab=${encodeURIComponent(tab)}`}
+        data-tab-link={tab}
+        class='px-4 py-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px text-white/60 border-transparent hover:text-white/80'
+      >
+        {tab}
+      </a>
+    ))
+  }
+</nav>
+
+<div class='flex-1 min-h-0 flex flex-col overflow-hidden'>
+  <section
+    data-tab-panel='about'
+    class='flex flex-col items-center justify-center min-h-full px-6 text-center'
+  >
+    <h1
+      class='font-syne text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white'
+    >
+      Mikhail Wahib
+    </h1>
+    <p class='mt-3 text-sm font-mono text-white/50 tracking-wide'>
+      Software Developer · Cairo, Egypt
+    </p>
+    <div class='h-px w-12 bg-primary/80 mx-auto mt-8 mb-8'></div>
+    <p class='text-white/70 text-base max-w-md leading-relaxed mx-auto'>
+      A software developer with interests in systems, backend and fullstack
+      development. I love learning new things and exploring different
+      technologies.
+    </p>
+    <p class='mt-10 text-xs font-mono text-white/40 tracking-wider'>
+      Go · TypeScript · Python · Rust · Node · PostgreSQL · React · Next.js
+    </p>
+  </section>
+
+  <section
+    data-tab-panel='projects'
+    class='hidden flex-col min-h-0 px-4 md:px-8 py-6'
+  >
+    <div class='flex flex-wrap justify-center gap-2 mb-6'>
+      {
+        FILTERS.map((filter) => (
+          <a
+            href={`?tab=projects${filter === 'all' ? '' : `&filter=${encodeURIComponent(filter)}`}`}
+            data-filter-link={filter}
+            class='px-3 py-1.5 text-xs font-medium rounded transition-colors capitalize text-white/60 hover:text-white border border-white/20 hover:border-white/40'
+          >
+            {filter}
+          </a>
+        ))
+      }
+    </div>
+
+    <div class='overflow-y-auto flex-1 min-h-0 pr-2 -mr-2'>
+      <ul
+        class='grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto pb-8 auto-rows-fr'
+      >
+        {
+          projects.map((project) => {
+            const demoUrl = project.url?.trim() ? project.url : null
+            const repoUrl = getRepoUrl(project.repo)
+            const tags = project.tags.join(',').toLowerCase()
+            return (
+              <li class='min-h-0' data-project-card data-project-tags={tags}>
+                <article class='h-full flex flex-col rounded-lg border border-white/10 bg-white/[0.02] p-4 md:p-5 hover:border-primary/30 hover:bg-white/[0.04] transition-colors'>
+                  <div class='flex flex-col gap-2 flex-1 min-h-0'>
+                    <h3 class='font-semibold text-white'>{project.title}</h3>
+                    <p class='text-sm text-white/70 leading-relaxed'>
+                      {project.description}
+                    </p>
+
+                    <div class='mt-auto'>
+                      <div class='h-[1px] w-1/4 bg-primary/15' />
+                      <div class='flex flex-wrap gap-2 text-xs text-white/60 my-4 shrink-0'>
+                        {project.techstack.map((tech) => (
+                          <span>{tech}</span>
+                        ))}
+                      </div>
+                      <div class='flex justify-between items-center mt-2 pt-2 border-t border-white/10 shrink-0'>
+                        <a
+                          href={repoUrl}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          class='text-white/70 hover:text-primary transition-colors inline-flex items-center gap-1'
+                        >
+                          <svg
+                            viewBox='0 0 24 24'
+                            class='w-3.5 h-3.5 fill-current'
+                            aria-hidden='true'
+                          >
+                            <path d='M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 6.8c.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.33 4.8-4.56 5.06.36.32.68.95.68 1.91 0 1.38-.01 2.49-.01 2.83 0 .28.18.6.69.5A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z' />
+                          </svg>
+                          Code
+                        </a>
+
+                        {demoUrl ? (
+                          <a
+                            href={demoUrl}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            class='text-primary hover:underline underline-offset-2'
+                          >
+                            Live demo
+                          </a>
+                        ) : (
+                          <span />
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section
+    data-tab-panel='contact'
+    class='hidden flex-col items-center justify-center px-6 py-8 text-center'
+  >
+    <div class='max-w-md space-y-6'>
+      <p class='text-white/70 text-base leading-relaxed mb-5'>
+        Open to new opportunities. Feel free to reach out via Email or LinkedIn.
+      </p>
+      <a
+        href='mailto:mikhailwahib20@gmail.com'
+        class='text-primary hover:underline underline-offset-4 text-lg'
+      >
+        mikhailwahib20@gmail.com
+      </a>
+
+      <div class='flex items-center justify-center gap-6 pt-4'>
+        <a
+          href='https://github.com/MikhailWahib'
+          target='_blank'
+          rel='noopener noreferrer'
+          class='text-white/50 hover:text-primary transition-colors'
+          aria-label='GitHub'
+        >
+          <svg
+            viewBox='0 0 24 24'
+            class='w-5 h-5 fill-current'
+            aria-hidden='true'
+          >
+            <path
+              d='M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 6.8c.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.33 4.8-4.56 5.06.36.32.68.95.68 1.91 0 1.38-.01 2.49-.01 2.83 0 .28.18.6.69.5A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z'
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href='https://www.linkedin.com/in/mikhail-wahib/'
+          target='_blank'
+          rel='noopener noreferrer'
+          class='text-white/50 hover:text-primary transition-colors'
+          aria-label='LinkedIn'
+        >
+          <svg
+            viewBox='0 0 24 24'
+            class='w-5 h-5 fill-current'
+            aria-hidden='true'
+          >
+            <path
+              d='M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 13.47V20h-3.38v-6.05c0-1.45-.52-2.44-1.82-2.44-.99 0-1.58.67-1.84 1.32-.1.23-.12.55-.12.88V20H9.9s.04-10.48 0-11.5h3.38v1.63l-.02.03h.02v-.03c.45-.7 1.25-1.69 3.04-1.69 2.22 0 3.89 1.48 3.89 4.67Z'
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script is:inline>
+  ;(() => {
+    const validTabs = ['about', 'projects', 'contact']
+    const validFilters = [
+      'all',
+      'frontend',
+      'backend',
+      'fullstack',
+      'systems programming',
+    ]
+
+    const params = new URLSearchParams(window.location.search)
+    let activeTab = params.get('tab') || 'about'
+    let activeFilter = params.get('filter') || 'all'
+
+    if (!validTabs.includes(activeTab)) activeTab = 'about'
+    if (!validFilters.includes(activeFilter)) activeFilter = 'all'
+
+    const tabPanels = document.querySelectorAll('[data-tab-panel]')
+    const tabLinks = document.querySelectorAll('[data-tab-link]')
+    const filterLinks = document.querySelectorAll('[data-filter-link]')
+    const projectCards = document.querySelectorAll('[data-project-card]')
+
+    const updateUrl = () => {
+      const nextParams = new URLSearchParams()
+      nextParams.set('tab', activeTab)
+      if (activeFilter !== 'all') nextParams.set('filter', activeFilter)
+      const next = nextParams.toString()
+      const url = next ? `?${next}` : '/'
+      window.history.replaceState({}, '', url)
+    }
+
+    const render = () => {
+      tabPanels.forEach((panel) => {
+        const tab = panel.getAttribute('data-tab-panel')
+        panel.classList.toggle('hidden', tab !== activeTab)
+        panel.classList.toggle('flex', tab === activeTab)
+      })
+
+      tabLinks.forEach((link) => {
+        const tab = link.getAttribute('data-tab-link')
+        const isActive = tab === activeTab
+        link.classList.toggle('text-primary', isActive)
+        link.classList.toggle('border-primary', isActive)
+        link.classList.toggle('text-white/60', !isActive)
+        link.classList.toggle('border-transparent', !isActive)
+      })
+
+      filterLinks.forEach((link) => {
+        const filter = link.getAttribute('data-filter-link')
+        const isActive = filter === activeFilter
+        link.classList.toggle('bg-primary', isActive)
+        link.classList.toggle('text-background', isActive)
+        link.classList.toggle('text-white/60', !isActive)
+        link.classList.toggle('border', !isActive)
+        link.classList.toggle('border-white/20', !isActive)
+      })
+
+      projectCards.forEach((card) => {
+        const tags = (card.getAttribute('data-project-tags') || '').split(',')
+        const visible = activeFilter === 'all' || tags.includes(activeFilter)
+        card.classList.toggle('hidden', !visible)
+      })
+
+      updateUrl()
+    }
+
+    tabLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault()
+        const nextTab = link.getAttribute('data-tab-link')
+        if (!nextTab || !validTabs.includes(nextTab)) return
+        activeTab = nextTab
+        if (activeTab !== 'projects') activeFilter = 'all'
+        render()
+      })
+    })
+
+    filterLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault()
+        activeTab = 'projects'
+        const nextFilter = link.getAttribute('data-filter-link')
+        if (!nextFilter || !validFilters.includes(nextFilter)) return
+        activeFilter = nextFilter
+        render()
+      })
+    })
+
+    render()
+  })()
+</script>
