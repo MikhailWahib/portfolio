@@ -22,6 +22,17 @@
     ]
   },
   {
+    "title": "MiniGit",
+    "description": "A minimal implementation of Git written in Rust. ",
+    "repo": "https://github.com/mikhailWahib/minigit",
+    "techstack": [
+      "Rust"
+    ],
+    "tags": [
+      "systems programming"
+    ]
+  },
+  {
     "title": "Xpress",
     "description": "Xpress is a minimalistic, HTTP framework built from scratch in Rust. It aims to demonstrate the inner workings of web frameworks by implementing core features like routing, request parsing, and response handling in a simple yet extensible way.",
     "repo": "https://github.com/mikhailWahib/xpress",
